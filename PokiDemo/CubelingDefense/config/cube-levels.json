@@ -1,0 +1,2496 @@
+[
+    {
+        "id": 1,
+        "name": "第一座守望塔",
+        "hint": "放一座弓箭塔即可拦截，4 个敌人奖励 8 金币。",
+        "biome": "grassland",
+        "width": 9,
+        "height": 3,
+        "night": false,
+        "targetDifficulty": 3,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 1],
+                    [3, 1],
+                    [4, 1],
+                    [5, 1],
+                    [6, 1]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [[1, 1]],
+            "player": [7, 1]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 2,
+                    "interval": 3,
+                    "delay": 0
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 2,
+                    "interval": 3,
+                    "delay": 0
+                }
+            ]
+        ]
+    },
+    {
+        "id": 2,
+        "name": "小小转角",
+        "hint": "升级弓箭，留意转角覆盖。",
+        "biome": "grassland",
+        "width": 11,
+        "height": 5,
+        "night": false,
+        "targetDifficulty": 5,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 2],
+                    [3, 2],
+                    [4, 2],
+                    [5, 2],
+                    [5, 1],
+                    [6, 1],
+                    [7, 1],
+                    [8, 1],
+                    [8, 2]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [[1, 2]],
+            "player": [9, 2]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 3,
+                    "interval": 2.8,
+                    "delay": 0
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 3,
+                    "interval": 2.8,
+                    "delay": 0
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 3,
+                    "interval": 2.8,
+                    "delay": 0
+                }
+            ]
+        ]
+    },
+    {
+        "id": 3,
+        "name": "河谷回环",
+        "hint": "敌人：圆球怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 13,
+        "height": 7,
+        "night": false,
+        "targetDifficulty": 8,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [5, 3],
+                    [5, 2],
+                    [5, 1],
+                    [6, 1],
+                    [7, 1],
+                    [8, 1],
+                    [8, 2],
+                    [8, 3],
+                    [9, 3],
+                    [10, 3]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [[1, 3]],
+            "player": [11, 3]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 3,
+                    "interval": 2.8,
+                    "delay": 0
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 3,
+                    "interval": 2.8,
+                    "delay": 0
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 3,
+                    "interval": 2.8,
+                    "delay": 0
+                }
+            ]
+        ]
+    },
+    {
+        "id": 4,
+        "name": "火炮登场",
+        "hint": "敌人：圆球怪、两脚怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 13,
+        "height": 7,
+        "night": false,
+        "targetDifficulty": 10,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [4, 2],
+                    [4, 1],
+                    [5, 1],
+                    [6, 1],
+                    [7, 1],
+                    [7, 2],
+                    [7, 3],
+                    [7, 4],
+                    [7, 5],
+                    [8, 5],
+                    [9, 5],
+                    [9, 4],
+                    [9, 3],
+                    [10, 3]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [[1, 3]],
+            "player": [11, 3]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 4,
+                    "interval": 1.6,
+                    "delay": 0
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 0,
+                    "count": 4,
+                    "interval": 1.6,
+                    "delay": 0
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 4,
+                    "interval": 1.6,
+                    "delay": 0
+                }
+            ]
+        ]
+    },
+    {
+        "id": 5,
+        "name": "转角防线",
+        "hint": "敌人：圆球怪、两脚怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 13,
+        "height": 7,
+        "night": false,
+        "targetDifficulty": 12,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [5, 3],
+                    [5, 4],
+                    [5, 5],
+                    [6, 5],
+                    [7, 5],
+                    [8, 5],
+                    [8, 4],
+                    [8, 3],
+                    [8, 2],
+                    [9, 2],
+                    [10, 2],
+                    [10, 3]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [[1, 3]],
+            "player": [11, 3]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 1,
+                    "count": 4,
+                    "interval": 1.6,
+                    "delay": 0
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 1,
+                    "count": 4,
+                    "interval": 1.6,
+                    "delay": 0
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 1,
+                    "count": 4,
+                    "interval": 1.6,
+                    "delay": 0
+                }
+            ]
+        ]
+    },
+    {
+        "id": 6,
+        "name": "溪流初遇",
+        "hint": "敌人：圆球怪、两脚怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": false,
+        "targetDifficulty": 18,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [4, 2],
+                    [4, 1],
+                    [5, 1],
+                    [6, 1],
+                    [7, 1],
+                    [8, 1],
+                    [8, 2],
+                    [8, 3],
+                    [8, 4],
+                    [8, 5],
+                    [9, 5],
+                    [10, 5],
+                    [11, 5],
+                    [12, 5]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [[1, 3]],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 4,
+                    "interval": 0.786,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 0,
+                    "count": 4,
+                    "interval": 0.786,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 0,
+                    "count": 5,
+                    "interval": 0.741,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 5,
+                    "interval": 0.741,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 0,
+                    "count": 6,
+                    "interval": 0.6960000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 0,
+                    "count": 6,
+                    "interval": 0.6960000000000001,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 1,
+                    "count": 4,
+                    "interval": 0.651,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 1,
+                    "count": 4,
+                    "interval": 0.651,
+                    "delay": 3
+                }
+            ]
+        ]
+    },
+    {
+        "id": 7,
+        "name": "水陆夹击",
+        "hint": "敌人：小小怪、两脚怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": false,
+        "targetDifficulty": 22,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [5, 3],
+                    [6, 3],
+                    [6, 2],
+                    [6, 1],
+                    [7, 1],
+                    [8, 1],
+                    [9, 1],
+                    [10, 1],
+                    [10, 2],
+                    [10, 3],
+                    [10, 4],
+                    [10, 5],
+                    [11, 5],
+                    [12, 5]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [[1, 3]],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 0,
+                    "count": 4,
+                    "interval": 0.767,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 0,
+                    "count": 4,
+                    "interval": 0.767,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 0,
+                    "count": 5,
+                    "interval": 0.722,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 0,
+                    "count": 5,
+                    "interval": 0.722,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 0,
+                    "count": 6,
+                    "interval": 0.677,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 0,
+                    "count": 6,
+                    "interval": 0.677,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 1,
+                    "count": 4,
+                    "interval": 0.632,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 1,
+                    "count": 4,
+                    "interval": 0.632,
+                    "delay": 3
+                }
+            ]
+        ]
+    },
+    {
+        "id": 8,
+        "name": "大地震颤",
+        "hint": "敌人：小小怪、两脚怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": false,
+        "targetDifficulty": 26,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [4, 4],
+                    [4, 5],
+                    [5, 5],
+                    [6, 5],
+                    [7, 5],
+                    [7, 4],
+                    [7, 3],
+                    [7, 2],
+                    [7, 1],
+                    [8, 1],
+                    [9, 1],
+                    [10, 1],
+                    [11, 1],
+                    [11, 2],
+                    [11, 3],
+                    [11, 4],
+                    [11, 5],
+                    [12, 5]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [[1, 3]],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 1,
+                    "count": 4,
+                    "interval": 0.748,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 1,
+                    "count": 4,
+                    "interval": 0.748,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 1,
+                    "count": 5,
+                    "interval": 0.703,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 1,
+                    "count": 5,
+                    "interval": 0.703,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 1,
+                    "count": 6,
+                    "interval": 0.658,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 1,
+                    "count": 6,
+                    "interval": 0.658,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 2,
+                    "count": 4,
+                    "interval": 0.613,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 2,
+                    "count": 4,
+                    "interval": 0.613,
+                    "delay": 3
+                }
+            ]
+        ]
+    },
+    {
+        "id": 9,
+        "name": "夜色防线",
+        "hint": "敌人：小小怪、两脚怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": true,
+        "targetDifficulty": 29,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [5, 3],
+                    [5, 2],
+                    [5, 1],
+                    [6, 1],
+                    [7, 1],
+                    [8, 1],
+                    [8, 2],
+                    [8, 3],
+                    [8, 4],
+                    [9, 4],
+                    [10, 4],
+                    [10, 5],
+                    [11, 5],
+                    [12, 5]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [[1, 3]],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 1,
+                    "count": 4,
+                    "interval": 0.7290000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 1,
+                    "count": 4,
+                    "interval": 0.7290000000000001,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 1,
+                    "count": 5,
+                    "interval": 0.684,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 1,
+                    "count": 5,
+                    "interval": 0.684,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 1,
+                    "count": 6,
+                    "interval": 0.6390000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 1,
+                    "count": 6,
+                    "interval": 0.6390000000000001,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 2,
+                    "count": 4,
+                    "interval": 0.5940000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 2,
+                    "count": 4,
+                    "interval": 0.5940000000000001,
+                    "delay": 3
+                }
+            ]
+        ]
+    },
+    {
+        "id": 10,
+        "name": "溪流初遇",
+        "hint": "敌人：方块小鱼、两脚怪、小小怪。观察路线，分配火力。 最后一波：巨型圆球怪 BOSS。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": false,
+        "targetDifficulty": 32,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [5, 3],
+                    [6, 3],
+                    [6, 4],
+                    [6, 5],
+                    [7, 5],
+                    [8, 5],
+                    [9, 5],
+                    [9, 4],
+                    [9, 3],
+                    [9, 2],
+                    [10, 2],
+                    [11, 2],
+                    [12, 2],
+                    [12, 3],
+                    [12, 4],
+                    [12, 5]
+                ]
+            },
+            {
+                "id": "B",
+                "terrain": "water",
+                "path": [
+                    [2, 9],
+                    [3, 9],
+                    [4, 9],
+                    [5, 9],
+                    [5, 8],
+                    [5, 7],
+                    [6, 7],
+                    [7, 7],
+                    [8, 7],
+                    [9, 7],
+                    [10, 7],
+                    [11, 7],
+                    [12, 7],
+                    [13, 7],
+                    [13, 6]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [
+                [1, 3],
+                [1, 9]
+            ],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 1,
+                    "count": 5,
+                    "interval": 0.71,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 1,
+                    "count": 5,
+                    "interval": 0.71,
+                    "delay": 1.5
+                },
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 1,
+                    "count": 5,
+                    "interval": 0.71,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 1,
+                    "count": 6,
+                    "interval": 0.6649999999999999,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 1,
+                    "count": 6,
+                    "interval": 0.6649999999999999,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 1,
+                    "count": 7,
+                    "interval": 0.62,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 1,
+                    "count": 7,
+                    "interval": 0.62,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 2,
+                    "count": 5,
+                    "interval": 0.575,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 2,
+                    "count": 5,
+                    "interval": 0.575,
+                    "delay": 1.5
+                },
+                {
+                    "exit": "A",
+                    "kind": "cube",
+                    "level": 5,
+                    "boss": true,
+                    "count": 1,
+                    "interval": 1,
+                    "delay": 3
+                }
+            ]
+        ]
+    },
+    {
+        "id": 11,
+        "name": "交错进攻",
+        "hint": "敌人：两脚怪、小小怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": false,
+        "targetDifficulty": 35,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [4, 2],
+                    [4, 1],
+                    [5, 1],
+                    [6, 1],
+                    [7, 1],
+                    [7, 2],
+                    [7, 3],
+                    [7, 4],
+                    [8, 4],
+                    [9, 4],
+                    [10, 4],
+                    [11, 4],
+                    [11, 5],
+                    [12, 5]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [[1, 3]],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 2,
+                    "count": 5,
+                    "interval": 0.6910000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 2,
+                    "count": 5,
+                    "interval": 0.6910000000000001,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 2,
+                    "count": 6,
+                    "interval": 0.646,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 2,
+                    "count": 6,
+                    "interval": 0.646,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 2,
+                    "count": 7,
+                    "interval": 0.6010000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 2,
+                    "count": 7,
+                    "interval": 0.6010000000000001,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 3,
+                    "count": 5,
+                    "interval": 0.556,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 3,
+                    "count": 5,
+                    "interval": 0.556,
+                    "delay": 1.5
+                }
+            ]
+        ]
+    },
+    {
+        "id": 12,
+        "name": "日光聚焦",
+        "hint": "敌人：两脚怪、小小怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": false,
+        "targetDifficulty": 38,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [5, 3],
+                    [5, 4],
+                    [5, 5],
+                    [6, 5],
+                    [7, 5],
+                    [8, 5],
+                    [8, 4],
+                    [8, 3],
+                    [8, 2],
+                    [8, 1],
+                    [9, 1],
+                    [10, 1],
+                    [11, 1],
+                    [11, 2],
+                    [11, 3],
+                    [12, 3],
+                    [12, 4],
+                    [12, 5]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [[1, 3]],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 2,
+                    "count": 5,
+                    "interval": 0.672,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 2,
+                    "count": 5,
+                    "interval": 0.672,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 2,
+                    "count": 6,
+                    "interval": 0.627,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 2,
+                    "count": 6,
+                    "interval": 0.627,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 2,
+                    "count": 7,
+                    "interval": 0.5820000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 2,
+                    "count": 7,
+                    "interval": 0.5820000000000001,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "tiny",
+                    "level": 3,
+                    "count": 5,
+                    "interval": 0.537,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 3,
+                    "count": 5,
+                    "interval": 0.537,
+                    "delay": 1.5
+                }
+            ]
+        ]
+    },
+    {
+        "id": 13,
+        "name": "岩石来客",
+        "hint": "敌人：方块小鱼、两脚怪、石头怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": false,
+        "targetDifficulty": 42,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [5, 3],
+                    [6, 3],
+                    [7, 3],
+                    [7, 2],
+                    [7, 1],
+                    [8, 1],
+                    [9, 1],
+                    [10, 1],
+                    [10, 2],
+                    [10, 3],
+                    [10, 4],
+                    [11, 4],
+                    [12, 4],
+                    [12, 5]
+                ]
+            },
+            {
+                "id": "B",
+                "terrain": "water",
+                "path": [
+                    [2, 9],
+                    [3, 9],
+                    [4, 9],
+                    [5, 9],
+                    [6, 9],
+                    [7, 9],
+                    [8, 9],
+                    [8, 8],
+                    [8, 7],
+                    [9, 7],
+                    [10, 7],
+                    [11, 7],
+                    [12, 7],
+                    [13, 7],
+                    [13, 6]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [
+                [1, 3],
+                [1, 9]
+            ],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 2,
+                    "count": 5,
+                    "interval": 0.653,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 2,
+                    "count": 5,
+                    "interval": 0.653,
+                    "delay": 1.5
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 2,
+                    "count": 5,
+                    "interval": 0.653,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 2,
+                    "count": 6,
+                    "interval": 0.608,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 2,
+                    "count": 6,
+                    "interval": 0.608,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 2,
+                    "count": 7,
+                    "interval": 0.5630000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 2,
+                    "count": 7,
+                    "interval": 0.5630000000000001,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 3,
+                    "count": 5,
+                    "interval": 0.518,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 3,
+                    "count": 5,
+                    "interval": 0.518,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 3,
+                    "count": 6,
+                    "interval": 0.47300000000000003,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 3,
+                    "count": 6,
+                    "interval": 0.47300000000000003,
+                    "delay": 1.5
+                }
+            ]
+        ]
+    },
+    {
+        "id": 14,
+        "name": "双线防守",
+        "hint": "敌人：方块小鱼、两脚怪、石头怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": false,
+        "targetDifficulty": 46,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [4, 4],
+                    [4, 5],
+                    [5, 5],
+                    [6, 5],
+                    [6, 4],
+                    [6, 3],
+                    [6, 2],
+                    [7, 2],
+                    [8, 2],
+                    [9, 2],
+                    [9, 3],
+                    [9, 4],
+                    [10, 4],
+                    [11, 4],
+                    [12, 4],
+                    [12, 5]
+                ]
+            },
+            {
+                "id": "B",
+                "terrain": "water",
+                "path": [
+                    [2, 9],
+                    [3, 9],
+                    [4, 9],
+                    [5, 9],
+                    [6, 9],
+                    [7, 9],
+                    [8, 9],
+                    [9, 9],
+                    [9, 8],
+                    [9, 7],
+                    [10, 7],
+                    [11, 7],
+                    [12, 7],
+                    [13, 7],
+                    [13, 6]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [
+                [1, 3],
+                [1, 9]
+            ],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 3,
+                    "count": 5,
+                    "interval": 0.634,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 3,
+                    "count": 5,
+                    "interval": 0.634,
+                    "delay": 1.5
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 3,
+                    "count": 5,
+                    "interval": 0.634,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 3,
+                    "count": 6,
+                    "interval": 0.589,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 3,
+                    "count": 6,
+                    "interval": 0.589,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 3,
+                    "count": 7,
+                    "interval": 0.544,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 3,
+                    "count": 7,
+                    "interval": 0.544,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 4,
+                    "count": 5,
+                    "interval": 0.499,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 4,
+                    "count": 5,
+                    "interval": 0.499,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.454,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.454,
+                    "delay": 1.5
+                }
+            ]
+        ]
+    },
+    {
+        "id": 15,
+        "name": "双流交错",
+        "hint": "敌人：方块小鱼、两脚怪、石头怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": false,
+        "targetDifficulty": 50,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [5, 3],
+                    [6, 3],
+                    [6, 2],
+                    [6, 1],
+                    [7, 1],
+                    [8, 1],
+                    [9, 1],
+                    [9, 2],
+                    [9, 3],
+                    [9, 4],
+                    [9, 5],
+                    [10, 5],
+                    [11, 5],
+                    [12, 5]
+                ]
+            },
+            {
+                "id": "B",
+                "terrain": "water",
+                "path": [
+                    [2, 9],
+                    [3, 9],
+                    [4, 9],
+                    [5, 9],
+                    [5, 8],
+                    [5, 7],
+                    [6, 7],
+                    [7, 7],
+                    [8, 7],
+                    [9, 7],
+                    [10, 7],
+                    [11, 7],
+                    [12, 7],
+                    [13, 7],
+                    [13, 6]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [
+                [1, 3],
+                [1, 9]
+            ],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 3,
+                    "count": 6,
+                    "interval": 0.615,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 3,
+                    "count": 6,
+                    "interval": 0.615,
+                    "delay": 1.5
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 3,
+                    "count": 6,
+                    "interval": 0.615,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 3,
+                    "count": 7,
+                    "interval": 0.57,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 3,
+                    "count": 7,
+                    "interval": 0.57,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 3,
+                    "count": 8,
+                    "interval": 0.525,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 3,
+                    "count": 8,
+                    "interval": 0.525,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.48,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.48,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 4,
+                    "count": 7,
+                    "interval": 0.435,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 4,
+                    "count": 7,
+                    "interval": 0.435,
+                    "delay": 1.5
+                }
+            ]
+        ]
+    },
+    {
+        "id": 16,
+        "name": "四脚来客",
+        "hint": "敌人：四脚怪、方块小鱼、石头怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": true,
+        "targetDifficulty": 54,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [5, 3],
+                    [5, 2],
+                    [5, 1],
+                    [6, 1],
+                    [7, 1],
+                    [7, 2],
+                    [7, 3],
+                    [7, 4],
+                    [7, 5],
+                    [8, 5],
+                    [9, 5],
+                    [10, 5],
+                    [10, 4],
+                    [10, 3],
+                    [11, 3],
+                    [12, 3],
+                    [12, 4],
+                    [12, 5]
+                ]
+            },
+            {
+                "id": "B",
+                "terrain": "water",
+                "path": [
+                    [2, 9],
+                    [3, 9],
+                    [4, 9],
+                    [5, 9],
+                    [6, 9],
+                    [6, 8],
+                    [6, 7],
+                    [7, 7],
+                    [8, 7],
+                    [9, 7],
+                    [10, 7],
+                    [11, 7],
+                    [12, 7],
+                    [13, 7],
+                    [13, 6]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [
+                [1, 3],
+                [1, 9]
+            ],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 3,
+                    "count": 6,
+                    "interval": 0.5960000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 3,
+                    "count": 6,
+                    "interval": 0.5960000000000001,
+                    "delay": 1.5
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 3,
+                    "count": 6,
+                    "interval": 0.5960000000000001,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 3,
+                    "count": 7,
+                    "interval": 0.551,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 3,
+                    "count": 7,
+                    "interval": 0.551,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 3,
+                    "count": 8,
+                    "interval": 0.5060000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 3,
+                    "count": 8,
+                    "interval": 0.5060000000000001,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.4610000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.4610000000000001,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 4,
+                    "count": 7,
+                    "interval": 0.4160000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 4,
+                    "count": 7,
+                    "interval": 0.4160000000000001,
+                    "delay": 1.5
+                }
+            ]
+        ]
+    },
+    {
+        "id": 17,
+        "name": "曲折山道",
+        "hint": "敌人：四脚怪、方块小鱼、石头怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": false,
+        "targetDifficulty": 58,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [4, 4],
+                    [4, 5],
+                    [5, 5],
+                    [6, 5],
+                    [7, 5],
+                    [8, 5],
+                    [8, 4],
+                    [8, 3],
+                    [8, 2],
+                    [8, 1],
+                    [9, 1],
+                    [10, 1],
+                    [11, 1],
+                    [12, 1],
+                    [12, 2],
+                    [12, 3],
+                    [12, 4],
+                    [12, 5]
+                ]
+            },
+            {
+                "id": "B",
+                "terrain": "water",
+                "path": [
+                    [2, 9],
+                    [3, 9],
+                    [4, 9],
+                    [5, 9],
+                    [6, 9],
+                    [7, 9],
+                    [7, 8],
+                    [7, 7],
+                    [8, 7],
+                    [9, 7],
+                    [10, 7],
+                    [11, 7],
+                    [12, 7],
+                    [13, 7],
+                    [13, 6]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [
+                [1, 3],
+                [1, 9]
+            ],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.577,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.577,
+                    "delay": 1.5
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.577,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 4,
+                    "count": 7,
+                    "interval": 0.5319999999999999,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 4,
+                    "count": 7,
+                    "interval": 0.5319999999999999,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 4,
+                    "count": 8,
+                    "interval": 0.487,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 4,
+                    "count": 8,
+                    "interval": 0.487,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 5,
+                    "count": 6,
+                    "interval": 0.44199999999999995,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 5,
+                    "count": 6,
+                    "interval": 0.44199999999999995,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 5,
+                    "count": 7,
+                    "interval": 0.39699999999999996,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 5,
+                    "count": 7,
+                    "interval": 0.39699999999999996,
+                    "delay": 1.5
+                }
+            ]
+        ]
+    },
+    {
+        "id": 18,
+        "name": "夜间防守",
+        "hint": "敌人：四脚怪、方块小鱼、石头怪。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": true,
+        "targetDifficulty": 62,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [5, 3],
+                    [6, 3],
+                    [7, 3],
+                    [7, 4],
+                    [7, 5],
+                    [8, 5],
+                    [9, 5],
+                    [10, 5],
+                    [10, 4],
+                    [10, 3],
+                    [10, 2],
+                    [11, 2],
+                    [12, 2],
+                    [12, 3],
+                    [12, 4],
+                    [12, 5]
+                ]
+            },
+            {
+                "id": "B",
+                "terrain": "water",
+                "path": [
+                    [2, 9],
+                    [3, 9],
+                    [4, 9],
+                    [5, 9],
+                    [6, 9],
+                    [7, 9],
+                    [8, 9],
+                    [8, 8],
+                    [8, 7],
+                    [9, 7],
+                    [10, 7],
+                    [11, 7],
+                    [12, 7],
+                    [13, 7],
+                    [13, 6]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [
+                [1, 3],
+                [1, 9]
+            ],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.558,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.558,
+                    "delay": 1.5
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.558,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 4,
+                    "count": 7,
+                    "interval": 0.513,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 4,
+                    "count": 7,
+                    "interval": 0.513,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 4,
+                    "count": 8,
+                    "interval": 0.4680000000000001,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 4,
+                    "count": 8,
+                    "interval": 0.4680000000000001,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 5,
+                    "count": 6,
+                    "interval": 0.42300000000000004,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 5,
+                    "count": 6,
+                    "interval": 0.42300000000000004,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 5,
+                    "count": 7,
+                    "interval": 0.37800000000000006,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "stone",
+                    "level": 5,
+                    "count": 7,
+                    "interval": 0.37800000000000006,
+                    "delay": 1.5
+                }
+            ]
+        ]
+    },
+    {
+        "id": 19,
+        "name": "黎明防线",
+        "hint": "敌人：方块鱼、四脚怪、方块小鱼。观察路线，分配火力。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": false,
+        "targetDifficulty": 67,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [4, 2],
+                    [4, 1],
+                    [5, 1],
+                    [6, 1],
+                    [6, 2],
+                    [6, 3],
+                    [6, 4],
+                    [7, 4],
+                    [8, 4],
+                    [9, 4],
+                    [9, 3],
+                    [9, 2],
+                    [9, 1],
+                    [10, 1],
+                    [11, 1],
+                    [12, 1],
+                    [12, 2],
+                    [12, 3],
+                    [12, 4],
+                    [12, 5]
+                ]
+            },
+            {
+                "id": "B",
+                "terrain": "water",
+                "path": [
+                    [2, 9],
+                    [3, 9],
+                    [4, 9],
+                    [5, 9],
+                    [6, 9],
+                    [7, 9],
+                    [8, 9],
+                    [9, 9],
+                    [9, 8],
+                    [9, 7],
+                    [10, 7],
+                    [11, 7],
+                    [12, 7],
+                    [13, 7],
+                    [13, 6]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [
+                [1, 3],
+                [1, 9]
+            ],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "B",
+                    "kind": "fish",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.539,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.539,
+                    "delay": 1.5
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 4,
+                    "count": 6,
+                    "interval": 0.539,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 4,
+                    "count": 7,
+                    "interval": 0.49400000000000005,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 4,
+                    "count": 7,
+                    "interval": 0.49400000000000005,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 4,
+                    "count": 8,
+                    "interval": 0.44900000000000007,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "fish",
+                    "level": 4,
+                    "count": 8,
+                    "interval": 0.44900000000000007,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "fish",
+                    "level": 5,
+                    "count": 6,
+                    "interval": 0.404,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 5,
+                    "count": 6,
+                    "interval": 0.404,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 5,
+                    "count": 7,
+                    "interval": 0.35900000000000004,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 5,
+                    "count": 7,
+                    "interval": 0.35900000000000004,
+                    "delay": 1.5
+                }
+            ]
+        ]
+    },
+    {
+        "id": 20,
+        "name": "熔岩试炼",
+        "hint": "敌人：方块鱼、四脚怪、方块小鱼。观察路线，分配火力。 最后一波：巨型两脚怪 BOSS。",
+        "biome": "grassland",
+        "width": 15,
+        "height": 11,
+        "night": false,
+        "targetDifficulty": 72,
+        "exits": [
+            {
+                "id": "A",
+                "terrain": "land",
+                "path": [
+                    [2, 3],
+                    [3, 3],
+                    [4, 3],
+                    [5, 3],
+                    [5, 4],
+                    [5, 5],
+                    [6, 5],
+                    [7, 5],
+                    [7, 4],
+                    [7, 3],
+                    [7, 2],
+                    [8, 2],
+                    [9, 2],
+                    [10, 2],
+                    [10, 3],
+                    [10, 4],
+                    [11, 4],
+                    [12, 4],
+                    [12, 5]
+                ]
+            },
+            {
+                "id": "B",
+                "terrain": "water",
+                "path": [
+                    [2, 9],
+                    [3, 9],
+                    [4, 9],
+                    [5, 9],
+                    [5, 8],
+                    [5, 7],
+                    [6, 7],
+                    [7, 7],
+                    [8, 7],
+                    [9, 7],
+                    [10, 7],
+                    [11, 7],
+                    [12, 7],
+                    [13, 7],
+                    [13, 6]
+                ]
+            }
+        ],
+        "bases": {
+            "enemy": [
+                [1, 3],
+                [1, 9]
+            ],
+            "player": [13, 5]
+        },
+        "waves": [
+            [
+                {
+                    "exit": "B",
+                    "kind": "fish",
+                    "level": 5,
+                    "count": 7,
+                    "interval": 0.52,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 5,
+                    "count": 7,
+                    "interval": 0.52,
+                    "delay": 1.5
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 5,
+                    "count": 7,
+                    "interval": 0.52,
+                    "delay": 3
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 5,
+                    "count": 8,
+                    "interval": 0.47500000000000003,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 5,
+                    "count": 8,
+                    "interval": 0.47500000000000003,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 5,
+                    "count": 9,
+                    "interval": 0.43000000000000005,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "fish",
+                    "level": 5,
+                    "count": 9,
+                    "interval": 0.43000000000000005,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "B",
+                    "kind": "fish",
+                    "level": 6,
+                    "count": 7,
+                    "interval": 0.385,
+                    "delay": 0
+                },
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 6,
+                    "count": 7,
+                    "interval": 0.385,
+                    "delay": 1.5
+                }
+            ],
+            [
+                {
+                    "exit": "A",
+                    "kind": "quadruped",
+                    "level": 6,
+                    "count": 8,
+                    "interval": 0.34,
+                    "delay": 0
+                },
+                {
+                    "exit": "B",
+                    "kind": "minnow",
+                    "level": 6,
+                    "count": 8,
+                    "interval": 0.34,
+                    "delay": 1.5
+                },
+                {
+                    "exit": "A",
+                    "kind": "feet",
+                    "level": 10,
+                    "boss": true,
+                    "count": 1,
+                    "interval": 1,
+                    "delay": 3
+                }
+            ]
+        ]
+    }
+]

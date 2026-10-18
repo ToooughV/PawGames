@@ -1,0 +1,41 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+~$*
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Development dependencies and caches
+node_modules/
+.vite/
+.cache/
+coverage/
+*.tsbuildinfo
+
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.local
+
+# Logs and temporary files
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Upload archives (publish extracted game files instead)
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+
+# Demo build files, assets and .nojekyll must remain tracked.
+# Do not ignore assets/, art/, audio/, fonts/, config/, locales/ or dist/ here.

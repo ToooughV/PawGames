@@ -1,0 +1,142 @@
+{
+    "menu.title": {
+        "zh-CN": "点亮方块",
+        "en": "Target Tap"
+    },
+    "menu.start": {
+        "zh-CN": "开始游戏",
+        "en": "Start Game"
+    },
+    "menu.stress": {
+        "zh-CN": "连续切换 ×20",
+        "en": "Switch ×20"
+    },
+    "menu.settings": {
+        "zh-CN": "设置",
+        "en": "Settings"
+    },
+    "menu.reward": {
+        "zh-CN": "看广告得奖励",
+        "en": "Watch Ad for Reward"
+    },
+    "settings.title": {
+        "zh-CN": "设置",
+        "en": "Settings"
+    },
+    "settings.language": {
+        "zh-CN": "语言",
+        "en": "Language"
+    },
+    "settings.channel.master": {
+        "zh-CN": "主音量",
+        "en": "Master"
+    },
+    "settings.channel.bgm": {
+        "zh-CN": "音乐",
+        "en": "Music"
+    },
+    "settings.channel.sfx": {
+        "zh-CN": "音效",
+        "en": "SFX"
+    },
+    "settings.mute": {
+        "zh-CN": "静音",
+        "en": "Mute"
+    },
+    "settings.done": {
+        "zh-CN": "完成",
+        "en": "Done"
+    },
+    "hud.back": {
+        "zh-CN": "返回菜单",
+        "en": "Back to Menu"
+    },
+    "hud.stat": {
+        "zh-CN": "方块 {boxes} · {pool}",
+        "en": "{boxes} boxes · {pool}"
+    },
+    "hud.spawn": {
+        "zh-CN": "配置表 spawn：{label} · grid={grid} · 行数={rows}",
+        "en": "spawn table: {label} · grid={grid} · rows={rows}"
+    },
+    "toast.stress": {
+        "zh-CN": "已连续切换 {count} 次",
+        "en": "Stress switched {count} times"
+    },
+    "toast.adResult": {
+        "zh-CN": "广告结果：{outcome} · 展示={shown} · 已发奖={rewarded}",
+        "en": "Ad result: {outcome} · shown={shown} · rewarded={rewarded}"
+    },
+    "toast.rewardDenied": {
+        "zh-CN": "广告未完成，不发放奖励（累计 {count}）",
+        "en": "Ad not completed, no reward (total {count})"
+    },
+    "toast.rewardGranted": {
+        "zh-CN": "奖励已发放，累计 {count}",
+        "en": "Reward granted, total {count}"
+    },
+    "round.title": {
+        "zh-CN": "点亮方块",
+        "en": "Target Tap"
+    },
+    "round.ready": {
+        "zh-CN": "点击亮起的方块，限时达成目标",
+        "en": "Tap the lit tile. Reach the goal before time runs out."
+    },
+    "round.playing": {
+        "zh-CN": "进行中",
+        "en": "Playing"
+    },
+    "round.paused": {
+        "zh-CN": "已暂停",
+        "en": "Paused"
+    },
+    "round.won": {
+        "zh-CN": "挑战成功！",
+        "en": "Challenge complete!"
+    },
+    "round.lost": {
+        "zh-CN": "时间到",
+        "en": "Time is up"
+    },
+    "round.best": {
+        "zh-CN": "最高分",
+        "en": "Best"
+    },
+    "round.tile": {
+        "zh-CN": "方块",
+        "en": "Tile"
+    },
+    "round.start": {
+        "zh-CN": "开始挑战",
+        "en": "Start challenge"
+    },
+    "round.retry": {
+        "zh-CN": "再来一局",
+        "en": "Play again"
+    },
+    "round.pause": {
+        "zh-CN": "暂停",
+        "en": "Pause"
+    },
+    "round.resume": {
+        "zh-CN": "继续",
+        "en": "Resume"
+    },
+    "round.revive": {
+        "zh-CN": "看广告增加时间",
+        "en": "Watch ad for extra time"
+    },
+    "round.back": {
+        "zh-CN": "返回菜单",
+        "en": "Back to menu"
+    },
+    "round.error": {
+        "zh-CN": "操作失败，请重试",
+        "en": "Something went wrong. Please retry."
+    },
+    "round.noReward": {
+        "zh-CN": "未获得奖励，可以免费重试",
+        "en": "No reward granted. You can retry for free."
+    }
+}
