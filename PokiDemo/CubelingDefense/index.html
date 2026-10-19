@@ -4,9 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Cubeling Defense</title>
-        <!-- npm run build:poki 使用真实适配器，运行期加载官方 SDK。 -->
-      <script type="module" crossorigin src="./assets/index-SoAexGVh.js"></script>
-      <link rel="stylesheet" crossorigin href="./assets/index-DMTkbkh7.css">
+        <!-- 发行构建按 Vite 模式选择平台适配器：npm run build:poki / build:crazygames / build:y8 / build:playgama。
+             四者都在运行期加载各自官方 SDK（Poki: game-cdn.poki.com；CrazyGames: sdk.crazygames.com；
+             Y8: cdn.y8.com/minimal-sdk/2-0/y8.min.js；Playgama: bridge.playgama.com/v2/stable/playgama-bridge.js），
+             本地与普通构建使用 LocalMockPlatform，因此不需要在此声明 script 标签。 -->
+      <script type="module" crossorigin src="./assets/index-BGiHGVVB.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index-CnWiF98T.css">
     </head>
     <body>
         <canvas id="application-canvas"></canvas>

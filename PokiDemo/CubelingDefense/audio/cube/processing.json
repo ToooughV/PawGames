@@ -1,142 +1,142 @@
 [
-  {
-    "name": "popup",
-    "source": "dragon-studio-pop-402324.mp3",
-    "sourceBytes": 23040,
-    "sourceSeconds": 0.72,
-    "seconds": 0.19,
-    "bytes": 4161,
-    "loop": false,
-    "channels": 1
-  },
-  {
-    "name": "place",
-    "source": "sumaga123-wood-hit-432148.mp3",
-    "sourceBytes": 42631,
-    "sourceSeconds": 1.332,
-    "seconds": 0.38,
-    "bytes": 5317,
-    "loop": false,
-    "channels": 1
-  },
-  {
-    "name": "arrow",
-    "source": "studiokolomna-whoosh-transitions-sfx-01-118227.mp3",
-    "sourceBytes": 9216,
-    "sourceSeconds": 0.288,
-    "seconds": 0.156,
-    "bytes": 4269,
-    "loop": false,
-    "channels": 1
-  },
-  {
-    "name": "cannon",
-    "source": "freesound_community-cannon-shot-14799.mp3",
-    "sourceBytes": 53498,
-    "sourceSeconds": 1.672,
-    "seconds": 0.65,
-    "bytes": 6855,
-    "loop": false,
-    "channels": 1
-  },
-  {
-    "name": "blast",
-    "source": "universfield-animated-cartoon-explosion-impact-352744.mp3",
-    "sourceBytes": 76032,
-    "sourceSeconds": 2.376,
-    "seconds": 0.85,
-    "bytes": 8079,
-    "loop": false,
-    "channels": 1
-  },
-  {
-    "name": "quake",
-    "source": "themediaguy-earthquake-rumble-amp-cracking-379298.mp3",
-    "sourceBytes": 227369,
-    "sourceSeconds": 7.105,
-    "seconds": 0.85,
-    "bytes": 8328,
-    "loop": false,
-    "channels": 1
-  },
-  {
-    "name": "laser",
-    "source": "soundreality-attack-laser-128280.mp3",
-    "sourceBytes": 257280,
-    "sourceSeconds": 8.04,
-    "seconds": 0.75,
-    "bytes": 8144,
-    "loop": true,
-    "channels": 1
-  },
-  {
-    "name": "lava",
-    "source": "freesound_community-lava-loop-2-67306.mp3",
-    "sourceBytes": 401280,
-    "sourceSeconds": 20.064,
-    "seconds": 3.92,
-    "bytes": 22315,
-    "loop": true,
-    "channels": 1
-  },
-  {
-    "name": "coin",
-    "source": "universfield-game-bonus-02-294436.mp3",
-    "sourceBytes": 59136,
-    "sourceSeconds": 1.848,
-    "seconds": 0.45,
-    "bytes": 5070,
-    "loop": false,
-    "channels": 1
-  },
-  {
-    "name": "upgrade",
-    "source": "universfield-level-up-191997.mp3",
-    "sourceBytes": 58514,
-    "sourceSeconds": 1.829,
-    "seconds": 1.145,
-    "bytes": 7278,
-    "loop": false,
-    "channels": 1
-  },
-  {
-    "name": "click",
-    "source": "universfield-soft-ui-click-147352.mp3",
-    "sourceBytes": 33436,
-    "sourceSeconds": 1.045,
-    "seconds": 0.18,
-    "bytes": 4272,
-    "loop": false,
-    "channels": 1
-  },
-  {
-    "name": "day",
-    "source": "HappyClappyLoop.wav",
-    "sourceBytes": 6162894,
-    "sourceSeconds": 17.441,
-    "seconds": 17.441,
-    "bytes": 294544,
-    "loop": true,
-    "channels": 2
-  },
-  {
-    "name": "night",
-    "source": "flowerbed_fields.ogg",
-    "sourceBytes": 1724097,
-    "sourceSeconds": 105.931,
-    "seconds": 105.931,
-    "bytes": 1085984,
-    "loop": true,
-    "channels": 2
-  },
-  {
-    "name": "planning",
-    "source": "funkymenuloop.mp3",
-    "sourceBytes": 740927,
-    "sourceSeconds": 18.462,
-    "seconds": 18.462,
-    "bytes": 246302,
-    "loop": true,
-    "channels": 2
-  }
+    {
+        "name": "popup",
+        "source": "dragon-studio-pop-402324.mp3",
+        "sourceBytes": 23040,
+        "sourceSeconds": 0.72,
+        "seconds": 0.19,
+        "bytes": 4161,
+        "loop": false,
+        "channels": 1
+    },
+    {
+        "name": "place",
+        "source": "sumaga123-wood-hit-432148.mp3",
+        "sourceBytes": 42631,
+        "sourceSeconds": 1.332,
+        "seconds": 0.38,
+        "bytes": 5317,
+        "loop": false,
+        "channels": 1
+    },
+    {
+        "name": "arrow",
+        "source": "studiokolomna-whoosh-transitions-sfx-01-118227.mp3",
+        "sourceBytes": 9216,
+        "sourceSeconds": 0.288,
+        "seconds": 0.156,
+        "bytes": 4269,
+        "loop": false,
+        "channels": 1
+    },
+    {
+        "name": "cannon",
+        "source": "freesound_community-cannon-shot-14799.mp3",
+        "sourceBytes": 53498,
+        "sourceSeconds": 1.672,
+        "seconds": 0.65,
+        "bytes": 6855,
+        "loop": false,
+        "channels": 1
+    },
+    {
+        "name": "blast",
+        "source": "universfield-animated-cartoon-explosion-impact-352744.mp3",
+        "sourceBytes": 76032,
+        "sourceSeconds": 2.376,
+        "seconds": 0.85,
+        "bytes": 8079,
+        "loop": false,
+        "channels": 1
+    },
+    {
+        "name": "quake",
+        "source": "themediaguy-earthquake-rumble-amp-cracking-379298.mp3",
+        "sourceBytes": 227369,
+        "sourceSeconds": 7.105,
+        "seconds": 0.85,
+        "bytes": 8328,
+        "loop": false,
+        "channels": 1
+    },
+    {
+        "name": "laser",
+        "source": "soundreality-attack-laser-128280.mp3",
+        "sourceBytes": 257280,
+        "sourceSeconds": 8.04,
+        "seconds": 0.75,
+        "bytes": 8144,
+        "loop": true,
+        "channels": 1
+    },
+    {
+        "name": "lava",
+        "source": "freesound_community-lava-loop-2-67306.mp3",
+        "sourceBytes": 401280,
+        "sourceSeconds": 20.064,
+        "seconds": 3.92,
+        "bytes": 22315,
+        "loop": true,
+        "channels": 1
+    },
+    {
+        "name": "coin",
+        "source": "universfield-game-bonus-02-294436.mp3",
+        "sourceBytes": 59136,
+        "sourceSeconds": 1.848,
+        "seconds": 0.45,
+        "bytes": 5070,
+        "loop": false,
+        "channels": 1
+    },
+    {
+        "name": "upgrade",
+        "source": "universfield-level-up-191997.mp3",
+        "sourceBytes": 58514,
+        "sourceSeconds": 1.829,
+        "seconds": 1.145,
+        "bytes": 7278,
+        "loop": false,
+        "channels": 1
+    },
+    {
+        "name": "click",
+        "source": "universfield-soft-ui-click-147352.mp3",
+        "sourceBytes": 33436,
+        "sourceSeconds": 1.045,
+        "seconds": 0.18,
+        "bytes": 4272,
+        "loop": false,
+        "channels": 1
+    },
+    {
+        "name": "day",
+        "source": "HappyClappyLoop.wav",
+        "sourceBytes": 6162894,
+        "sourceSeconds": 17.441,
+        "seconds": 17.441,
+        "bytes": 294544,
+        "loop": true,
+        "channels": 2
+    },
+    {
+        "name": "night",
+        "source": "flowerbed_fields.ogg",
+        "sourceBytes": 1724097,
+        "sourceSeconds": 105.931,
+        "seconds": 105.931,
+        "bytes": 1085984,
+        "loop": true,
+        "channels": 2
+    },
+    {
+        "name": "planning",
+        "source": "funkymenuloop.mp3",
+        "sourceBytes": 740927,
+        "sourceSeconds": 18.462,
+        "seconds": 18.462,
+        "bytes": 246302,
+        "loop": true,
+        "channels": 2
+    }
 ]
