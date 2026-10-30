@@ -5,9 +5,10 @@
         "sourceBytes": 23040,
         "sourceSeconds": 0.72,
         "seconds": 0.19,
-        "bytes": 2156,
+        "bytes": 1676,
         "loop": false,
-        "channels": 1
+        "channels": 1,
+        "deliveryExport": "V057: 64kbps stereo BGM / 48kbps mono cues, no truncation; docs/cube-playtest-v057.md"
     },
     {
         "name": "upgrade",
@@ -15,9 +16,10 @@
         "sourceBytes": 58514,
         "sourceSeconds": 1.829,
         "seconds": 1.145,
-        "bytes": 9836,
+        "bytes": 7436,
         "loop": false,
-        "channels": 1
+        "channels": 1,
+        "deliveryExport": "V057: 64kbps stereo BGM / 48kbps mono cues, no truncation; docs/cube-playtest-v057.md"
     },
     {
         "name": "click",
@@ -25,9 +27,10 @@
         "sourceBytes": 33436,
         "sourceSeconds": 1.045,
         "seconds": 0.18,
-        "bytes": 2156,
+        "bytes": 1676,
         "loop": false,
-        "channels": 1
+        "channels": 1,
+        "deliveryExport": "V057: 64kbps stereo BGM / 48kbps mono cues, no truncation; docs/cube-playtest-v057.md"
     },
     {
         "name": "day",
@@ -35,9 +38,10 @@
         "sourceBytes": 6162894,
         "sourceSeconds": 17.441,
         "seconds": 17.441,
-        "bytes": 210068,
+        "bytes": 140300,
         "loop": true,
-        "channels": 2
+        "channels": 2,
+        "deliveryExport": "V057: 64kbps stereo BGM / 48kbps mono cues, no truncation; docs/cube-playtest-v057.md"
     },
     {
         "name": "night",
@@ -56,8 +60,9 @@
         "sourceBytes": 740927,
         "sourceSeconds": 18.462,
         "seconds": 18.462,
-        "bytes": 222293,
+        "bytes": 148364,
         "loop": true,
-        "channels": 2
+        "channels": 2,
+        "deliveryExport": "V057: 64kbps stereo BGM / 48kbps mono cues, no truncation; docs/cube-playtest-v057.md"
     }
 ]

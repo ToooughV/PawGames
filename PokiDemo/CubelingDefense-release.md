@@ -1,21 +1,19 @@
-# Cubeling Defense demo · V056 · 2026-10-30
+# Cubeling Defense demo · V057 · 2026-10-31
 
-- Source: playcanvas_frame / `00_cube_defense` / `32eb8aa`.
+- Source: playcanvas_frame / `00_cube_defense` / `f602d36`.
 - Build: `npm run build:standalone`; no platform SDK.
 - Destination: `PokiDemo/CubelingDefense/`.
-- Runtime files: 168; raw size: 6,604,899 bytes.
-- Archive: `cubeling-defense-standalone-2026-10-30-32eb8aa.zip`, 3,880,821 bytes; source worktree `build/releases/`.
-- Archive SHA-256: `07bb6a386380351ffe1ea3daaece9a979d3b68e8c49c4fe300504298fe3ef51f`.
-- Published files verified byte-for-byte against dist; superseded hashed bundles removed, `.nojekyll` retained, other games unchanged.
+- Runtime files: 172; raw size: 5,822,636 bytes.
+- Archive: `cubeling-defense-standalone-2026-10-31-f602d36.zip`, 3,227,966 bytes; source worktree `build/releases/`.
+- Archive SHA-256: `4e4751b45ca1905925922086c64fcde1f65d808d0dea55ed5ca02cb7ef1a3249`.
+- Published files verified byte-for-byte against dist; superseded files removed within this game only; `.nojekyll` retained.
 
-V056 fixes invisible flying coins: their HTML was cached at module import before atlas initialization and retained the removed standalone image URL. Coin markup now resolves the decoded atlas image when spawned. Actual combat verified decoded images moving toward the wallet, with no errors. TypeScript, ESLint, five targeted tests and standalone build passed. See `docs/cube-playtest-v056.md`.
+V057 removes all 16 game SFX from the blocking common preload. Current BGM and likely SFX warm serially after entry; playback loads through the same deduplicating asset manager. Initial UI excludes unused tower portraits and result badges; foreground transitions still wait for complete required UI. The lossless icon atlas is split into a 19,130-byte battle page and a deferred upgrade/research page, with content-hashed filenames to avoid stale-cache coordinate mismatches. Tiny critical atlas/config preloads overlap the engine download.
 
-V055 loading behavior retained:
+Audio exports reduce the processed files from 659,640 to 392,664 bytes; night music unchanged. WOFF2 retains every font glyph and reduces 297,188 to 137,968 bytes. Two oversized enemy portraits reduce 143,428 to 38,180 bytes with exact resized alpha. Grassland/base models share original JPEG bytes; geometry, UVs, nodes and materials unchanged. Total package is smaller than V056's 6,604,899 bytes.
 
-Startup now waits for the current saved level's biome, bases, equipped/layout tower models and necessary UI. New players no longer wait for Research, the entire upgrade screen, other biomes or unequipped towers. Returning players who enter planning load its artwork before display. UI/model background queues start after entry, prioritize likely next use and promote explicit player requests ahead of queued speculation. Downloads are deduplicated; a missing destination waits under the existing loading artwork, pauses gameplay, retries in place on failure and preserves saves. Background failures do not fail the current game.
+Controlled cold-start comparison: no-store, 400ms request delay, aggregate 256KiB/s, gzip text resources. V056 10.902s / 56 completed resource requests; V057 8.000s / 35. Initial requested payload including HTML: 2,041,161 -> 1,246,421 bytes. This is a local simulated-network comparison, not a guarantee of GitHub Pages cold-load time on the user's connection.
 
-Critical battle UI preload: 15 network items / 288,242 bytes versus the previous 107 / 1,153,320 bytes. This excludes JS, CSS, fonts, config and models. All resources remain in the package; this is reduced startup dependency, not deleted content. The existing lossless atlas and approved art are unchanged.
+Validation: TypeScript, ESLint, 23 focused tests, standalone build, first-stage placement/combat/victory and upgrade-screen browser checks passed. No broken visible upgrade images or console errors. MP3 duration/RMS checks passed; inspected model bounds unchanged; all packed icon pixels unchanged. V056 flying-coin atlas lifetime fix retained.
 
-Validation: TypeScript, ESLint, 14 targeted tests and standalone build passed. Full suite run: 541/542 passed, with the previously known level-16 no-replay growth-strategy failure; the subsequently added in-flight abort test passed separately. Browser checks: first level, settings, upgrades, level-41 transition, tower-unlock prompts and Research; no broken images or errors. With no-store local serving and an artificial 45-second desert-model delay, the first level became interactive in 2.414 seconds before that optional model finished. This is not a GitHub Pages cold-load speed claim. Logs expose `[cube startup]` timings for real-network diagnosis.
-
-See source `docs/cube-playtest-v055.md`. The historical platform audit has not been rescored.
+See source `docs/cube-playtest-v057.md`, `docs/cube-delivery-v057.json`, and `docs/cube-model-textures-v057.json`. No player saves are cleared; the historical platform audit has not been rescored.

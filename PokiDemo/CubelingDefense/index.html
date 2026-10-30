@@ -4,9 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Cubeling Defense</title>
+        <!-- Discover small first-scene dependencies while the engine bundle downloads. -->
+        <link rel="preload" href="./config/cube-levels.json" as="fetch" crossorigin />
+        <link rel="preload" href="./assets/ui/atlas/icons-0-38a214d97ebb.webp" as="fetch" crossorigin />
         <!-- Vite 按发行模式在 head 中写入对应官方 SDK，早于游戏入口；普通/standalone 构建不引入平台 SDK。 -->
-      <script type="module" crossorigin src="./assets/index-Bfg2cjaa.js"></script>
-      <link rel="stylesheet" crossorigin href="./assets/index-CT55zxFH.css">
+      <script type="module" crossorigin src="./assets/index-BNuzdbw0.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index-nxGicndB.css">
     </head>
     <body>
         <canvas id="application-canvas"></canvas>
