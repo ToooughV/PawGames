@@ -1,19 +1,17 @@
-# Cubeling Defense demo · V054 · 2026-10-30
+# Cubeling Defense demo · V055 · 2026-10-30
 
-- Source: playcanvas_frame / `00_cube_defense` / `a9552d6`.
-- Build: `npm run build:standalone`; no platform SDK or Inspector markers.
+- Source: playcanvas_frame / `00_cube_defense` / `59d89cc`.
+- Build: `npm run build:standalone`; no platform SDK.
 - Destination: `PokiDemo/CubelingDefense/`.
-- Runtime files: 168; raw size: 6,598,147 bytes (6.29 MiB). `.nojekyll` retained.
-- Archive: `cubeling-defense-standalone-2026-10-30-a9552d6.zip`, 3,878,567 bytes; source worktree `build/releases/`.
-- Archive SHA-256: `dd982aefbd077420dd4a0312813b6fac1a399870b89e78505077927c0b01e764`.
-- Deployed files verified byte-for-byte against dist. Superseded bundles and atlas source slices removed; other games unchanged.
+- Runtime files: 168; raw size: 6,604,889 bytes.
+- Archive: `cubeling-defense-standalone-2026-10-30-59d89cc.zip`, 3,880,810 bytes; source worktree `build/releases/`.
+- Archive SHA-256: `201c7f7968e6e22dbd0418d6c5e11e6a83349e34bdfabae5526f0648dfad28e4`.
+- Published files verified byte-for-byte against dist; superseded hashed bundles removed, `.nojekyll` retained, other games unchanged.
 
-Research now shows a generated golden exclamation mark after a new first-Boss crystal reward. Opening Research records it as read; unspent crystals, refunds and repeat Boss kills do not rearm it. Upgrade prices and shortfalls use separate rows, keeping five-digit amounts together. The crystal guide follows language changes rather than keeping the language from initial startup; all eight guide locales are present.
+Startup now waits for the current saved level's biome, bases, equipped/layout tower models and necessary UI. New players no longer wait for Research, the entire upgrade screen, other biomes or unequipped towers. Returning players who enter planning load its artwork before display. UI/model background queues start after entry, prioritize likely next use and promote explicit player requests ahead of queued speculation. Downloads are deduplicated; a missing destination waits under the existing loading artwork, pauses gameplay, retries in place on failure and preserves saves. Background failures do not fail the current game.
 
-Loading overlaps UI, fonts and scene assets, hiding gameplay UI until all are ready. One lossless atlas replaces 36 small image requests: 108,274 source RGBA pixels compared, zero differences. UI network images decrease from 142 to 107 (24.6% fewer requests); UI image file bytes total 1,153,320. This is not a measured 24.6% improvement in load time. Large lossy icons and nine-slice panels remain standalone to avoid increasing download size or changing approved art. Original atlas inputs live outside public and are not duplicated in this build.
+Critical battle UI preload: 15 network items / 288,242 bytes versus the previous 107 / 1,153,320 bytes. This excludes JS, CSS, fonts, config and models. All resources remain in the package; this is reduced startup dependency, not deleted content. The existing lossless atlas and approved art are unchanged.
 
-Validation: TypeScript, ESLint, 47 targeted tests and standalone build passed. Browser checks covered 320×568, 568×320, 768×1024 and 1280×720; price/shortfall rows fit, guide language matches, the reward notice clears, and the final build has no broken images or console errors. Model/font/UI downloads complete under the interactive loading cover.
+Validation: TypeScript, ESLint, 14 targeted tests and standalone build passed. Full suite run: 541/542 passed, with the previously known level-16 no-replay growth-strategy failure; the subsequently added in-flight abort test passed separately. Browser checks: first level, settings, upgrades, level-41 transition, tower-unlock prompts and Research; no broken images or errors. With no-store local serving and an artificial 45-second desert-model delay, the first level became interactive in 2.414 seconds before that optional model finished. This is not a GitHub Pages cold-load speed claim. Logs expose `[cube startup]` timings for real-network diagnosis.
 
-Full suite: 534/535 pass. The previously recorded level-16 no-replay growth-strategy test still fails; this UI/loading update does not change balance or resolve it. Real-device weak-network timings and platform SDK acceptance are unverified.
-
-The historical audit (58.75 confirmed, evidence 85%) was not rescored. See source `docs/cube-playtest-v054.md` and `docs/reviews/cube-defense-2026-10-30.md`.
+See source `docs/cube-playtest-v055.md`. The historical platform audit has not been rescored.
