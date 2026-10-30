@@ -1,18 +1,19 @@
-# Cubeling Defense demo · V053 · 2026-10-30
+# Cubeling Defense demo · V054 · 2026-10-30
 
-- Source: playcanvas_frame / `00_cube_defense` / `b151800`.
-- Build: `npm run build:standalone`.
+- Source: playcanvas_frame / `00_cube_defense` / `a9552d6`.
+- Build: `npm run build:standalone`; no platform SDK or Inspector markers.
 - Destination: `PokiDemo/CubelingDefense/`.
-- Runtime files: 202; raw size: 6,586,408 bytes (6.28 MiB). `.nojekyll` retained.
-- Archive: `cubeling-defense-standalone-2026-10-30-b151800.zip`, 3,878,542 bytes; kept in source worktree `build/releases/`.
-- Archive SHA-256: `b67b43806c8f87e80fa707fc94901d29600d4d072232d99c31fa6ecb42aa521a`.
-- All deployed files verified byte-for-byte against the build. Old JS/CSS bundles removed; other games unchanged.
-- No hosting SDK script injected. Standalone adapter never shows ads or grants ad rewards.
+- Runtime files: 168; raw size: 6,598,147 bytes (6.29 MiB). `.nojekyll` retained.
+- Archive: `cubeling-defense-standalone-2026-10-30-a9552d6.zip`, 3,878,567 bytes; source worktree `build/releases/`.
+- Archive SHA-256: `dd982aefbd077420dd4a0312813b6fac1a399870b89e78505077927c0b01e764`.
+- Deployed files verified byte-for-byte against dist. Superseded bundles and atlas source slices removed; other games unchanged.
 
-This update preloads and decodes 141 UI/portrait images while the existing interactive Loading remains visible. It fixes compact-screen upgrade, research, settings, result and report layouts. First-upgrade tutorial uses the actual upgrade price (currently 6 coins); its pointer now targets the visible compact control.
+Research now shows a generated golden exclamation mark after a new first-Boss crystal reward. Opening Research records it as read; unspent crystals, refunds and repeat Boss kills do not rearm it. Upgrade prices and shortfalls use separate rows, keeping five-digit amounts together. The crystal guide follows language changes rather than keeping the language from initial startup; all eight guide locales are present.
 
-Validation: typecheck, lint, 15 targeted UI/localization/loading tests and standalone build passed. Thirty layout cases cover six screens at 320×568, 360×640, 390×844, 568×320 and 667×375: no outer-panel overflow or broken images. Long route/report content can scroll internally while navigation remains visible. Fresh standalone playthrough completed level 1 and confirmed the 6-coin upgrade reduces the 8-coin balance to 2 and advances the tutorial.
+Loading overlaps UI, fonts and scene assets, hiding gameplay UI until all are ready. One lossless atlas replaces 36 small image requests: 108,274 source RGBA pixels compared, zero differences. UI network images decrease from 142 to 107 (24.6% fewer requests); UI image file bytes total 1,153,320. This is not a measured 24.6% improvement in load time. Large lossy icons and nine-slice panels remain standalone to avoid increasing download size or changing approved art. Original atlas inputs live outside public and are not duplicated in this build.
 
-Prior full suite: 527/528 passed; the known no-replay strategy test cannot solve level 16. This update does not change balance or claim that failure is resolved. Real mobile hardware, weak-network behavior and platform SDK acceptance remain unverified.
+Validation: TypeScript, ESLint, 47 targeted tests and standalone build passed. Browser checks covered 320×568, 568×320, 768×1024 and 1280×720; price/shortfall rows fit, guide language matches, the reward notice clears, and the final build has no broken images or console errors. Model/font/UI downloads complete under the interactive loading cover.
 
-The historical 2026-10-30 audit (58.75 confirmed, evidence 85%) was not rescored. See source `docs/cube-playtest-v053.md` and `docs/reviews/cube-defense-2026-10-30.md`.
+Full suite: 534/535 pass. The previously recorded level-16 no-replay growth-strategy test still fails; this UI/loading update does not change balance or resolve it. Real-device weak-network timings and platform SDK acceptance are unverified.
+
+The historical audit (58.75 confirmed, evidence 85%) was not rescored. See source `docs/cube-playtest-v054.md` and `docs/reviews/cube-defense-2026-10-30.md`.
