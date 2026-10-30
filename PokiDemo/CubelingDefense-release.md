@@ -1,16 +1,18 @@
-# Cubeling Defense demo · 2026-10-30
+# Cubeling Defense demo · V053 · 2026-10-30
 
-- Source: playcanvas_frame / `00_cube_defense` / `8d37095`.
-- Build command: `npm run build:standalone`.
+- Source: playcanvas_frame / `00_cube_defense` / `b151800`.
+- Build: `npm run build:standalone`.
 - Destination: `PokiDemo/CubelingDefense/`.
-- Runtime files: 202; raw size: 6,577,294 bytes (6.27 MiB). `.nojekyll` retained separately.
-- Archive size: 3,876,721 bytes (3.70 MiB), kept locally in the source worktree's `build/releases/`.
-- Archive SHA-256: `9252092f81e4de89581d0afd2e676c38066cffd5d289d76fdd47a4b20402d510`.
-- All 202 deployed files verified byte-for-byte against the standalone build. Removed 26 obsolete build files; other games unchanged.
-- No hosting SDK script is injected. Standalone adapter never shows ads or grants ad rewards. This demo is not a Poki Release / CrazyGames Full SDK build.
+- Runtime files: 202; raw size: 6,586,408 bytes (6.28 MiB). `.nojekyll` retained.
+- Archive: `cubeling-defense-standalone-2026-10-30-b151800.zip`, 3,878,542 bytes; kept in source worktree `build/releases/`.
+- Archive SHA-256: `b67b43806c8f87e80fa707fc94901d29600d4d072232d99c31fa6ecb42aa521a`.
+- All deployed files verified byte-for-byte against the build. Old JS/CSS bundles removed; other games unchanged.
+- No hosting SDK script injected. Standalone adapter never shows ads or grants ad rewards.
 
-Current content includes the revised UI and tower models, automatic battle schedules with manual START, research, themed terrain, audio, balance/economy changes through v052, and stronger mushroom effects.
+This update preloads and decodes 141 UI/portrait images while the existing interactive Loading remains visible. It fixes compact-screen upgrade, research, settings, result and report layouts. First-upgrade tutorial uses the actual upgrade price (currently 6 coins); its pointer now targets the visible compact control.
 
-Validation: typecheck, lint and build passed. Local subdirectory preview starts successfully. Full tests: **527/528 passed**; the known no-replay campaign strategy test cannot solve level 16. This is a balance regression, not a startup failure, and remains open. First upgrade tutorial still says 8 coins while the actual price is 6. Real mobile, low-end performance and platform SDK acceptance are not verified by this demo update.
+Validation: typecheck, lint, 15 targeted UI/localization/loading tests and standalone build passed. Thirty layout cases cover six screens at 320×568, 360×640, 390×844, 568×320 and 667×375: no outer-panel overflow or broken images. Long route/report content can scroll internally while navigation remains visible. Fresh standalone playthrough completed level 1 and confirmed the 6-coin upgrade reduces the 8-coin balance to 2 and advances the tutorial.
 
-Assessment uses audit-web-game rubric v1: confirmed 58.75/100, possible 58.75–73.75, evidence coverage 85%. Performance and release-material evidence are incomplete; this is not an approval prediction. Full report and evidence live in the source repository at `docs/reviews/cube-defense-2026-10-30.md`.
+Prior full suite: 527/528 passed; the known no-replay strategy test cannot solve level 16. This update does not change balance or claim that failure is resolved. Real mobile hardware, weak-network behavior and platform SDK acceptance remain unverified.
+
+The historical 2026-10-30 audit (58.75 confirmed, evidence 85%) was not rescored. See source `docs/cube-playtest-v053.md` and `docs/reviews/cube-defense-2026-10-30.md`.
