@@ -1,19 +1,16 @@
-# Cubeling Defense demo · V057 · 2026-10-31
+# Cubeling Defense demo · V058 · 2026-10-31
 
-- Source: playcanvas_frame / `00_cube_defense` / `f602d36`.
+- Source: playcanvas_frame / `00_cube_defense` / `676a6be`.
 - Build: `npm run build:standalone`; no platform SDK.
-- Destination: `PokiDemo/CubelingDefense/`.
-- Runtime files: 172; raw size: 5,822,636 bytes.
-- Archive: `cubeling-defense-standalone-2026-10-31-f602d36.zip`, 3,227,966 bytes; source worktree `build/releases/`.
-- Archive SHA-256: `4e4751b45ca1905925922086c64fcde1f65d808d0dea55ed5ca02cb7ef1a3249`.
-- Published files verified byte-for-byte against dist; superseded files removed within this game only; `.nojekyll` retained.
+- Runtime build: 173 files, 6,048,632 bytes; all current published files verified byte-for-byte against dist.
+- Archive: `cubeling-defense-standalone-2026-10-31-676a6be.zip`, 3,403,834 bytes; source worktree `build/releases/`.
+- Archive SHA-256: `3929626a3a048785d96973ec005536cbd9b92e9d8894d4d8dcb4539c55e65851`.
+- Incremental demo update retains the previous hashed JS/CSS files; the new HTML references only the current build. Player saves are preserved.
 
-V057 removes all 16 game SFX from the blocking common preload. Current BGM and likely SFX warm serially after entry; playback loads through the same deduplicating asset manager. Initial UI excludes unused tower portraits and result badges; foreground transitions still wait for complete required UI. The lossless icon atlas is split into a 19,130-byte battle page and a deferred upgrade/research page, with content-hashed filenames to avoid stale-cache coordinate mismatches. Tiny critical atlas/config preloads overlap the engine download.
+Loading defaults to English unless the player has saved a language preference. Upgrade UI warms before optional future models/audio while the tutorial is running. 37 unchanged WebP slices use one content-hashed resource pack plus the existing icon atlas, instead of many serial requests. Opening upgrades no longer waits on unrelated 3D resources; entering a battle still verifies the needed models.
 
-Audio exports reduce the processed files from 659,640 to 392,664 bytes; night music unchanged. WOFF2 retains every font glyph and reduces 297,188 to 137,968 bytes. Two oversized enemy portraits reduce 143,428 to 38,180 bytes with exact resized alpha. Grassland/base models share original JPEG bytes; geometry, UVs, nodes and materials unchanged. Total package is smaller than V056's 6,604,899 bytes.
+The pack is 220,333 bytes raw / 164,952 bytes with gzip in the test server. Original images remain as fallbacks; this reduces request latency rather than total package size. Existing audio compression and flying-coin fix remain intact.
 
-Controlled cold-start comparison: no-store, 400ms request delay, aggregate 256KiB/s, gzip text resources. V056 10.902s / 56 completed resource requests; V057 8.000s / 35. Initial requested payload including HTML: 2,041,161 -> 1,246,421 bytes. This is a local simulated-network comparison, not a guarantee of GitHub Pages cold-load time on the user's connection.
+Validation: TypeScript, ESLint, 52 focused tests, standalone build, tutorial placement/combat/victory, attack upgrade and entering level two. Local simulated network: no-store, 1.5s delay per request, aggregate 256KiB/s. The UI pack completed during combat; clicking next after victory showed upgrades in approximately 897ms including automation overhead. All 55 upgrade IMG elements decoded; no console warnings/errors. This is not a guarantee for every GitHub Pages connection. The old comparison was already warm when clicked, so no cold transition speedup ratio is claimed.
 
-Validation: TypeScript, ESLint, 23 focused tests, standalone build, first-stage placement/combat/victory and upgrade-screen browser checks passed. No broken visible upgrade images or console errors. MP3 duration/RMS checks passed; inspected model bounds unchanged; all packed icon pixels unchanged. V056 flying-coin atlas lifetime fix retained.
-
-See source `docs/cube-playtest-v057.md`, `docs/cube-delivery-v057.json`, and `docs/cube-model-textures-v057.json`. No player saves are cleared; the historical platform audit has not been rescored.
+Details: source `docs/cube-playtest-v058.md`. Original art, layouts and gameplay unchanged.

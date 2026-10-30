@@ -46,11 +46,12 @@
         /* Embedded storage may be blocked. */
     }
     const language =
-        [saved, ...(navigator.languages || [])]
+        [saved]
             .filter(Boolean)
             .map((value) => value.toLowerCase().split('-')[0])
             .find((value) => texts[value]) || 'en';
     const text = texts[language];
+    root.lang = language;
     target.setAttribute('aria-label', text[0]);
     root.querySelector('.loading-invite').textContent = text[0];
     root.querySelector('.loading-score span').textContent = text[1];
