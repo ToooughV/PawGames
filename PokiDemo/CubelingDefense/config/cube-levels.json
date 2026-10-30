@@ -923,6 +923,7 @@
                     "kind": "cube",
                     "level": 5,
                     "boss": true,
+                    "bossId": "guardian",
                     "count": 1,
                     "interval": 1,
                     "delay": 3
@@ -1722,7 +1723,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 3,
+                    "level": 4,
                     "count": 6,
                     "interval": 0.5960000000000001,
                     "delay": 0
@@ -1730,7 +1731,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 3,
+                    "level": 4,
                     "count": 6,
                     "interval": 0.5960000000000001,
                     "delay": 1.5
@@ -1738,7 +1739,7 @@
                 {
                     "exit": "A",
                     "kind": "stone",
-                    "level": 3,
+                    "level": 4,
                     "count": 6,
                     "interval": 0.5960000000000001,
                     "delay": 3
@@ -1748,7 +1749,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 3,
+                    "level": 4,
                     "count": 7,
                     "interval": 0.551,
                     "delay": 0
@@ -1756,7 +1757,7 @@
                 {
                     "exit": "A",
                     "kind": "stone",
-                    "level": 3,
+                    "level": 4,
                     "count": 7,
                     "interval": 0.551,
                     "delay": 1.5
@@ -1766,7 +1767,7 @@
                 {
                     "exit": "A",
                     "kind": "stone",
-                    "level": 3,
+                    "level": 4,
                     "count": 8,
                     "interval": 0.5060000000000001,
                     "delay": 0
@@ -1774,7 +1775,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 3,
+                    "level": 4,
                     "count": 8,
                     "interval": 0.5060000000000001,
                     "delay": 1.5
@@ -1784,7 +1785,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 4,
+                    "level": 5,
                     "count": 6,
                     "interval": 0.4610000000000001,
                     "delay": 0
@@ -1792,7 +1793,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 4,
+                    "level": 5,
                     "count": 6,
                     "interval": 0.4610000000000001,
                     "delay": 1.5
@@ -1802,7 +1803,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 4,
+                    "level": 5,
                     "count": 7,
                     "interval": 0.4160000000000001,
                     "delay": 0
@@ -1810,7 +1811,7 @@
                 {
                     "exit": "A",
                     "kind": "stone",
-                    "level": 4,
+                    "level": 5,
                     "count": 7,
                     "interval": 0.4160000000000001,
                     "delay": 1.5
@@ -2054,7 +2055,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 4,
+                    "level": 5,
                     "count": 6,
                     "interval": 0.558,
                     "delay": 0
@@ -2062,7 +2063,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 4,
+                    "level": 5,
                     "count": 6,
                     "interval": 0.558,
                     "delay": 1.5
@@ -2070,7 +2071,7 @@
                 {
                     "exit": "A",
                     "kind": "stone",
-                    "level": 4,
+                    "level": 5,
                     "count": 6,
                     "interval": 0.558,
                     "delay": 3
@@ -2080,7 +2081,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 4,
+                    "level": 5,
                     "count": 7,
                     "interval": 0.513,
                     "delay": 0
@@ -2088,7 +2089,7 @@
                 {
                     "exit": "A",
                     "kind": "stone",
-                    "level": 4,
+                    "level": 5,
                     "count": 7,
                     "interval": 0.513,
                     "delay": 1.5
@@ -2098,7 +2099,7 @@
                 {
                     "exit": "A",
                     "kind": "stone",
-                    "level": 4,
+                    "level": 5,
                     "count": 8,
                     "interval": 0.4680000000000001,
                     "delay": 0
@@ -2106,7 +2107,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 4,
+                    "level": 5,
                     "count": 8,
                     "interval": 0.4680000000000001,
                     "delay": 1.5
@@ -2116,7 +2117,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 5,
+                    "level": 6,
                     "count": 6,
                     "interval": 0.42300000000000004,
                     "delay": 0
@@ -2124,7 +2125,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 5,
+                    "level": 6,
                     "count": 6,
                     "interval": 0.42300000000000004,
                     "delay": 1.5
@@ -2134,7 +2135,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 5,
+                    "level": 6,
                     "count": 7,
                     "interval": 0.37800000000000006,
                     "delay": 0
@@ -2142,7 +2143,7 @@
                 {
                     "exit": "A",
                     "kind": "stone",
-                    "level": 5,
+                    "level": 6,
                     "count": 7,
                     "interval": 0.37800000000000006,
                     "delay": 1.5
@@ -2223,7 +2224,7 @@
                 {
                     "exit": "B",
                     "kind": "fish",
-                    "level": 4,
+                    "level": 5,
                     "count": 6,
                     "interval": 0.539,
                     "delay": 0
@@ -2231,7 +2232,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 4,
+                    "level": 5,
                     "count": 6,
                     "interval": 0.539,
                     "delay": 1.5
@@ -2239,7 +2240,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 4,
+                    "level": 5,
                     "count": 6,
                     "interval": 0.539,
                     "delay": 3
@@ -2249,7 +2250,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 4,
+                    "level": 5,
                     "count": 7,
                     "interval": 0.49400000000000005,
                     "delay": 0
@@ -2257,7 +2258,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 4,
+                    "level": 5,
                     "count": 7,
                     "interval": 0.49400000000000005,
                     "delay": 1.5
@@ -2267,7 +2268,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 4,
+                    "level": 5,
                     "count": 8,
                     "interval": 0.44900000000000007,
                     "delay": 0
@@ -2275,7 +2276,7 @@
                 {
                     "exit": "B",
                     "kind": "fish",
-                    "level": 4,
+                    "level": 5,
                     "count": 8,
                     "interval": 0.44900000000000007,
                     "delay": 1.5
@@ -2285,7 +2286,7 @@
                 {
                     "exit": "B",
                     "kind": "fish",
-                    "level": 5,
+                    "level": 6,
                     "count": 6,
                     "interval": 0.404,
                     "delay": 0
@@ -2293,7 +2294,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 5,
+                    "level": 6,
                     "count": 6,
                     "interval": 0.404,
                     "delay": 1.5
@@ -2303,7 +2304,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 5,
+                    "level": 6,
                     "count": 7,
                     "interval": 0.35900000000000004,
                     "delay": 0
@@ -2311,7 +2312,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 5,
+                    "level": 6,
                     "count": 7,
                     "interval": 0.35900000000000004,
                     "delay": 1.5
@@ -2388,7 +2389,7 @@
                 {
                     "exit": "B",
                     "kind": "fish",
-                    "level": 5,
+                    "level": 6,
                     "count": 7,
                     "interval": 0.52,
                     "delay": 0
@@ -2396,7 +2397,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 5,
+                    "level": 6,
                     "count": 7,
                     "interval": 0.52,
                     "delay": 1.5
@@ -2404,7 +2405,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 5,
+                    "level": 6,
                     "count": 7,
                     "interval": 0.52,
                     "delay": 3
@@ -2414,7 +2415,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 5,
+                    "level": 6,
                     "count": 8,
                     "interval": 0.47500000000000003,
                     "delay": 0
@@ -2422,7 +2423,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 5,
+                    "level": 6,
                     "count": 8,
                     "interval": 0.47500000000000003,
                     "delay": 1.5
@@ -2432,7 +2433,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 5,
+                    "level": 6,
                     "count": 9,
                     "interval": 0.43000000000000005,
                     "delay": 0
@@ -2440,7 +2441,7 @@
                 {
                     "exit": "B",
                     "kind": "fish",
-                    "level": 5,
+                    "level": 6,
                     "count": 9,
                     "interval": 0.43000000000000005,
                     "delay": 1.5
@@ -2450,7 +2451,7 @@
                 {
                     "exit": "B",
                     "kind": "fish",
-                    "level": 6,
+                    "level": 7,
                     "count": 7,
                     "interval": 0.385,
                     "delay": 0
@@ -2458,7 +2459,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 6,
+                    "level": 7,
                     "count": 7,
                     "interval": 0.385,
                     "delay": 1.5
@@ -2468,7 +2469,7 @@
                 {
                     "exit": "A",
                     "kind": "quadruped",
-                    "level": 6,
+                    "level": 7,
                     "count": 8,
                     "interval": 0.34,
                     "delay": 0
@@ -2476,7 +2477,7 @@
                 {
                     "exit": "B",
                     "kind": "minnow",
-                    "level": 6,
+                    "level": 7,
                     "count": 8,
                     "interval": 0.34,
                     "delay": 1.5
@@ -2484,8 +2485,9 @@
                 {
                     "exit": "A",
                     "kind": "feet",
-                    "level": 10,
+                    "level": 11,
                     "boss": true,
+                    "bossId": "guardian",
                     "count": 1,
                     "interval": 1,
                     "delay": 3

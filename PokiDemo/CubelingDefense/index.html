@@ -4,24 +4,36 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Cubeling Defense</title>
-        <!-- 发行构建按 Vite 模式选择平台适配器：npm run build:poki / build:crazygames / build:y8 / build:playgama。
-             四者都在运行期加载各自官方 SDK（Poki: game-cdn.poki.com；CrazyGames: sdk.crazygames.com；
-             Y8: cdn.y8.com/minimal-sdk/2-0/y8.min.js；Playgama: bridge.playgama.com/v2/stable/playgama-bridge.js），
-             本地与普通构建使用 LocalMockPlatform，因此不需要在此声明 script 标签。 -->
-      <script type="module" crossorigin src="./assets/index-CPKI9RL5.js"></script>
-      <link rel="stylesheet" crossorigin href="./assets/index-CJrmQElb.css">
+        <!-- Vite 按发行模式在 head 中写入对应官方 SDK，早于游戏入口；普通/standalone 构建不引入平台 SDK。 -->
+      <script type="module" crossorigin src="./assets/index-BtrwyIbF.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index-C0vT82jP.css">
     </head>
     <body>
         <canvas id="application-canvas"></canvas>
-        <section id="cube-loading" role="status" aria-live="polite">
-            <div class="loading-art">
-                <img src="./art/cubeling-defense-loading-v3.webp" alt="Cubeling Defense" fetchpriority="high" />
+        <section id="cube-loading" aria-label="Cubeling Defense">
+            <img
+                class="loading-logo"
+                src="./art/cubeling-defense-logo-loading.svg"
+                alt="Cubeling Defense"
+                draggable="false"
+            />
+            <div class="loading-stage">
+                <i class="loading-island" aria-hidden="true"></i><i class="loading-island small" aria-hidden="true"></i
+                ><img class="loading-tower" src="./assets/ui/upgrade/tower-arrow.webp" alt="" draggable="false" /><button
+                    class="loading-target"
+                    type="button"
+                    aria-label="点击小怪热身"
+                >
+                    <img class="loading-enemy" src="./art/cube-icon-v2.webp" alt="" draggable="false" /></button
+                ><i class="loading-arrow" aria-hidden="true"></i><span class="loading-spark" aria-hidden="true">✦</span
+                ><span class="loading-invite">点击小怪热身</span>
             </div>
-            <div class="loading-status">
-                <strong>正在加载资源…</strong>
-                <progress aria-label="资源加载中"></progress>
-                <small>把防御塔放在道路转角，覆盖更多敌人。</small>
+            <output class="loading-score" aria-live="polite"><span>命中</span> <b>0</b></output>
+            <div class="loading-status" role="status">
+                <strong>正在加载资源…</strong><progress aria-label="资源加载中"></progress
+                ><small>把防御塔放在道路转角，覆盖更多敌人。</small>
             </div>
-        </section>
+        </section>
+        <script src="./loading-play.js" defer></script>
     </body>
 </html>

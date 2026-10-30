@@ -1,0 +1,169 @@
+{
+  "source": "docs\\art\\cubeling-defense-upgrade-phone-portrait-v4.png",
+  "size": [
+    941,
+    1672
+  ],
+  "assets": {
+    "arrow": {
+      "box": [
+        40,
+        474,
+        166,
+        577
+      ],
+      "method": "seeded-grabcut",
+      "size": [
+        126,
+        103
+      ]
+    },
+    "cannon": {
+      "box": [
+        40,
+        634,
+        160,
+        738
+      ],
+      "method": "seeded-grabcut",
+      "size": [
+        120,
+        104
+      ]
+    },
+    "quake": {
+      "box": [
+        40,
+        804,
+        166,
+        908
+      ],
+      "method": "seeded-grabcut",
+      "size": [
+        126,
+        104
+      ]
+    },
+    "laser": {
+      "box": [
+        40,
+        956,
+        165,
+        1074
+      ],
+      "method": "seeded-grabcut",
+      "size": [
+        125,
+        118
+      ]
+    },
+    "lava": {
+      "box": [
+        40,
+        1132,
+        168,
+        1242
+      ],
+      "method": "seeded-grabcut",
+      "size": [
+        128,
+        110
+      ]
+    },
+    "castle": {
+      "box": [
+        270,
+        1358,
+        403,
+        1498
+      ],
+      "method": "seeded-grabcut",
+      "size": [
+        133,
+        140
+      ]
+    },
+    "coin": {
+      "box": [
+        646,
+        49,
+        693,
+        100
+      ],
+      "method": "seeded-grabcut",
+      "size": [
+        47,
+        51
+      ]
+    },
+    "heart": {
+      "box": [
+        416,
+        1429,
+        469,
+        1479
+      ],
+      "method": "seeded-grabcut",
+      "size": [
+        53,
+        50
+      ]
+    },
+    "button-green": {
+      "box": [
+        700,
+        654,
+        888,
+        738
+      ],
+      "method": "clean-strip-nine-slice",
+      "slice": 12,
+      "size": [
+        188,
+        84
+      ]
+    },
+    "button-neutral": {
+      "box": [
+        700,
+        749,
+        888,
+        835
+      ],
+      "method": "clean-strip-nine-slice",
+      "slice": 12,
+      "size": [
+        188,
+        86
+      ]
+    },
+    "card": {
+      "box": [
+        33,
+        466,
+        244,
+        620
+      ],
+      "method": "clean-strip-nine-slice",
+      "slice": 14,
+      "size": [
+        211,
+        154
+      ]
+    },
+    "card-selected": {
+      "box": [
+        30,
+        790,
+        248,
+        949
+      ],
+      "method": "clean-strip-nine-slice",
+      "slice": 14,
+      "size": [
+        218,
+        159
+      ]
+    }
+  }
+}
