@@ -1,19 +1,19 @@
-# Cubeling Defense demo · V062 · 2026-10-31
+# Cubeling Defense demo · V063 · 2026-10-31
 
-- Source: playcanvas_frame / `00_cube_defense` / `b3ddf56`.
+- Source: playcanvas_frame / `00_cube_defense` / `fe434fd`.
 - Build: `npm run build:standalone`; no platform SDK.
-- Current build: 175 files, 6,213,540 bytes. Every current published file verified byte-for-byte against dist.
-- Archive: `cubeling-defense-standalone-2026-10-31-b3ddf56.zip`, 3,624,926 bytes, source worktree `build/releases/`.
-- SHA-256: `7860e8386735c3dfb9c421619d4ef0de004eb11bb29c2c6d927ae650d74db589`.
-- Runtime: `index-BDvlq72h.js`; CSS remains `index-ChNvU8Cx.css`.
-- Incremental update adds the new runtime and updates HTML; retains old hashed files and all unchanged art. Player saves preserved.
+- Current build: 175 files, 5,210,840 bytes. Every current file verified byte-for-byte against dist.
+- Archive: `cubeling-defense-standalone-2026-10-31-fe434fd.zip`, 2,673,344 bytes, source worktree `build/releases/`.
+- SHA-256: `435c36d866174b5a7047d6194887f544e40689db34a8d15e99f0f1f8ec0648c6`.
+- Runtime: `index-DS-AINfU.js`; CSS remains `index-ChNvU8Cx.css`.
+- Incremental update retains previous hashed files for cached clients; HTML references current assets. Player saves preserved.
 
-All sixteen SFX (104,000 bytes) now complete in the first batch. Scene assets follow the current level biome; tower models follow save unlocks. Enemy meshes remain procedural; initial portraits follow the encounter. Rift texture is deferred until Quake is unlocked. Immediately after entry, result and upgrade UI take priority over music, upcoming models, research and optional portraits. Music playback cannot bypass this priority on an early gesture.
+Adopt user-selected WebP quality 60 (method 6, exact alpha at quality 100) for 108 standalone images and two regenerated atlas pages. Image dimensions and alpha are unchanged. Future image/atlas exports use the same approved configuration; already-compressed images are not repeatedly re-encoded. Historical originals and candidates remain outside the repository. SVG and model JPEG/embedded textures are unchanged.
 
-A cold production test with shared 400 Kbps bandwidth and 400 ms request latency entered level one at 30.161 seconds, versus the previous baseline median of 27.143 seconds: requiring all SFX upfront increases the initial wait on this extreme connection. Upgrade images completed 7.217 seconds after entry versus about 14.03 seconds previously; BGM requests started only afterward. New measurement is one sample, not an online timing guarantee. Initial responses totaled 1,341,601 bytes. No unrelated biome or locked tower model appeared before entry.
+All 110 WebP files: 1,596,924 → 814,866 bytes (49.0% smaller). Upgrade package gzip + atlas: 288,256 → 117,561 bytes (59.2% smaller). Total current raw build: 6,213,540 → 5,210,840 bytes; ZIP: 3,624,926 → 2,673,344 bytes. These are size changes, not measured load-time or VRAM reductions. Standalone fallback files and packed copies coexist, so build totals are not initial-download totals.
 
-Lossless re-encoding of 64 UI/atlas images could save only 4 bytes; no image replacements or additional lossy encoding were applied.
+Retains V062 loading order: all sixteen SFX first; current biome and unlocked towers; result/upgrade UI immediately afterward; then music and speculative resources.
 
-Validation: typecheck, lint, 24 focused tests and standalone build pass; production weak-network browser enters first-level tutorial. Tests cover all 120 level resource plans and the BGM gate. Full balance suite not rerun; the previously documented baseline level-16 strategy-search failure remains outside this loading change.
+Validation: typecheck, lint, 15 targeted preload/pack/atlas/loading-plan tests and standalone build pass. All independent image alpha/canvases verified; 36 atlas frames preserve layout and alpha. Production browser entered level one, showed defeat UI and opened the upgrade screen with complete art. Development upgrade-prices fixture checked. No balance/save/SDK changes.
 
-Details: source `docs/cube-loading-v062.md`; comparison baseline `docs/cube-weak-network-v061.md`. No artwork, balance, save-format or SDK changes.
+Details: source `docs/cube-webp-q60-v063.md` and per-image `docs/cube-image-compression-v063.json`.
