@@ -1,16 +1,18 @@
-# Cubeling Defense demo · V058 · 2026-10-31
+# Cubeling Defense demo · V059 · 2026-10-31
 
-- Source: playcanvas_frame / `00_cube_defense` / `676a6be`.
+- Source: playcanvas_frame / `00_cube_defense` / `91b4c64`.
 - Build: `npm run build:standalone`; no platform SDK.
-- Runtime build: 173 files, 6,048,632 bytes; all current published files verified byte-for-byte against dist.
-- Archive: `cubeling-defense-standalone-2026-10-31-676a6be.zip`, 3,403,834 bytes; source worktree `build/releases/`.
-- Archive SHA-256: `3929626a3a048785d96973ec005536cbd9b92e9d8894d4d8dcb4539c55e65851`.
+- Runtime build: 173 files, 6,045,213 bytes; all current published files verified byte-for-byte against dist.
+- Archive: `cubeling-defense-standalone-2026-10-31-91b4c64.zip`, 3,394,217 bytes; source worktree `build/releases/`.
+- Archive SHA-256: `309990a241d499fdb208f228afe375deff0808ff729a420fb9acc30962f3fd4a`.
 - Incremental demo update retains the previous hashed JS/CSS files; the new HTML references only the current build. Player saves are preserved.
 
-Loading defaults to English unless the player has saved a language preference. Upgrade UI warms before optional future models/audio while the tutorial is running. 37 unchanged WebP slices use one content-hashed resource pack plus the existing icon atlas, instead of many serial requests. Opening upgrades no longer waits on unrelated 3D resources; entering a battle still verifies the needed models.
+Mobile upgrades now use the approved full art board and real controls. The previous small-screen breakpoint hid it and replaced backgrounds, tower cards and level navigation with a simplified proxy UI. Portrait and landscape now retain the existing design and scale to the viewport; rotating does not recreate the dialog.
 
-The pack is 220,333 bytes raw / 164,952 bytes with gzip in the test server. Original images remain as fallbacks; this reduces request latency rather than total package size. Existing audio compression and flying-coin fix remain intact.
+Runtime improvements: cache HUD nodes and number formatters, avoid unchanged DOM/health-bar writes, replace full target sorting with equivalent linear selection, reuse enemy lookup indexes, and load only portraits needed by the visible route/report page. Hidden Research guidance no longer requests its icon at startup. Existing priority loading, image pack/atlas, English Loading default, audio compression and flying coins are retained.
 
-Validation: TypeScript, ESLint, 52 focused tests, standalone build, tutorial placement/combat/victory, attack upgrade and entering level two. Local simulated network: no-store, 1.5s delay per request, aggregate 256KiB/s. The UI pack completed during combat; clicking next after victory showed upgrades in approximately 897ms including automation overhead. All 55 upgrade IMG elements decoded; no console warnings/errors. This is not a guarantee for every GitHub Pages connection. The old comparison was already warm when clicked, so no cold transition speedup ratio is claimed.
+Validation: TypeScript, ESLint, 52 focused tests and standalone build pass. Desktop Chromium viewport checks cover 320×568, 375×667, 390×844, 667×375 and 844×390; observed 59 images decoded and 39 sized controls within the viewport. Upgrade purchase works. Fresh production build completed tutorial placement, combat, victory and opening upgrades without console errors. These are viewport tests, not physical Android Edge certification.
 
-Details: source `docs/cube-playtest-v058.md`. Original art, layouts and gameplay unchanged.
+Full suite: 549/550 pass. The bounded campaign-planner test fails at level 16 on both this revision and pristine prior `676a6be`; recorded as an existing issue. Difficulty was not altered to satisfy the search.
+
+Details: source `docs/cube-playtest-v059.md`. No new art, stat/balance or player-save changes.
