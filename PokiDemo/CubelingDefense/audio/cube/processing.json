@@ -38,10 +38,12 @@
         "sourceBytes": 6162894,
         "sourceSeconds": 17.441,
         "seconds": 17.441,
-        "bytes": 140300,
+        "bytes": 82323,
         "loop": true,
         "channels": 2,
-        "deliveryExport": "V057: 64kbps stereo BGM / 48kbps mono cues, no truncation; docs/cube-playtest-v057.md"
+        "deliveryExport": "V066: user-selected V065 Opus 32kbps VBR; full duration, 48kHz; exact audition candidate",
+        "encodingSource": "V057 saved MP3 original; see docs/cube-audio-v066.md",
+        "sha256": "dc45b8ecbc755dcf60d17a6fb767ac10b99a299ca745997738df634560410650"
     },
     {
         "name": "night",
@@ -49,10 +51,12 @@
         "sourceBytes": 51229,
         "sourceSeconds": 6.138,
         "seconds": 6.138,
-        "bytes": 51229,
+        "bytes": 26890,
         "loop": true,
         "channels": 1,
-        "processing": "User-provided final MP3, copied unchanged; excluded from regeneration."
+        "deliveryExport": "V066: user-selected V065 Opus 32kbps VBR; full duration, 48kHz; exact audition candidate",
+        "encodingSource": "V057 saved MP3 original; see docs/cube-audio-v066.md",
+        "sha256": "7adf12d9c2f54c73d11b2081f3c364ddc1410af4121bbe1c8193c88df430fd48"
     },
     {
         "name": "planning",
@@ -60,9 +64,11 @@
         "sourceBytes": 740927,
         "sourceSeconds": 18.462,
         "seconds": 18.462,
-        "bytes": 148364,
+        "bytes": 80687,
         "loop": true,
         "channels": 2,
-        "deliveryExport": "V057: 64kbps stereo BGM / 48kbps mono cues, no truncation; docs/cube-playtest-v057.md"
+        "deliveryExport": "V066: user-selected V065 Opus 32kbps VBR; full duration, 48kHz; exact audition candidate",
+        "encodingSource": "V057 saved MP3 original; see docs/cube-audio-v066.md",
+        "sha256": "0e5d21c5f35566a407f04092ea53d280156754ce620615dbaf3b153050989e3a"
     }
 ]

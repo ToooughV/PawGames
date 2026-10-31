@@ -1,13 +1,13 @@
-# Cubeling Defense demo · V065 · 2026-10-31
+# Cubeling Defense demo · V066 · 2026-10-31
 
-- Source: playcanvas_frame / `00_cube_defense` / `0386fcd`.
+- Source: playcanvas_frame / `00_cube_defense` / `a2bafa3`.
 - Build: `npm run build:standalone`; no platform SDK.
-- Current build: 175 files, 5,211,728 bytes. Verified byte-for-byte against dist.
-- Archive: `cubeling-defense-standalone-2026-10-31-0386fcd.zip`, 2,673,790 bytes, source worktree `build/releases/`.
-- SHA-256: `010e7aeb72793dc4a3758ef16b771cf1b095afb8832acd30cc32d896d0becfd4`.
-- Runtime: `index-piwh0nYt.js`; CSS `index-ChNvU8Cx.css`.
-- Incremental update retains previous hashed files. Player saves preserved.
+- Current build: 175 files, 5,062,321 bytes. Verified byte-for-byte against dist.
+- Archive: `cubeling-defense-standalone-2026-10-31-a2bafa3.zip`, 2,527,730 bytes, source worktree `build/releases/`.
+- SHA-256: `bd4717e4809474c1d8ff67c92c5d5b837e26d436ddcb024884b2d3d55349d39a`.
+- Runtime: `index-Bzv56Rqq.js`; CSS `index-ChNvU8Cx.css`.
+- Incremental update retains previous hashed files and old MP3 paths for cached clients. New runtime requests only Opus BGM. Player saves preserved.
 
-Night BGM playback gain increased from 0.28 to 0.364 (+30%). Day/planning volumes remain unchanged. Retains existing fade, user volume/mute and Boss pitch behavior. Audio files remain unchanged; compressed BGM candidates are local audition files pending selection.
+Adopt user-selected 32 kbps VBR Opus BGM (Ogg container). All three tracks total 189,900 bytes, down from 339,893 bytes (-44.1%). Exact audition candidates, complete duration and channel layout retained. New build contains no duplicate BGM MP3. SFX remain MP3. Night gain remains 0.364 (+30%); Boss pitch and load priority unchanged.
 
-Validation: 9 audio tests, typecheck and standalone build pass. Retains V064 continuous background loading and Q60 artwork. Details: source `docs/cube-audio-v065.md` and `docs/cube-background-v064.md`.
+Validation: 17 focused audio/loading tests, typecheck, lint and standalone build pass. Actual dist audio successfully decoded with PlayCanvas AudioParser in Chromium; SoundInstance played night with loop=true, pitch=1.3, volume=0.364. Android Edge / iOS hardware not tested. Retains V064 continuous background loading and Q60 artwork. Details: source `docs/cube-audio-v066.md`.
