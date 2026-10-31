@@ -1,18 +1,16 @@
-# Cubeling Defense demo · V059 · 2026-10-31
+# Cubeling Defense demo · V060 · 2026-10-31
 
-- Source: playcanvas_frame / `00_cube_defense` / `91b4c64`.
+- Source: playcanvas_frame / `00_cube_defense` / `5de8876`.
 - Build: `npm run build:standalone`; no platform SDK.
-- Runtime build: 173 files, 6,045,213 bytes; all current published files verified byte-for-byte against dist.
-- Archive: `cubeling-defense-standalone-2026-10-31-91b4c64.zip`, 3,394,217 bytes; source worktree `build/releases/`.
-- Archive SHA-256: `309990a241d499fdb208f228afe375deff0808ff729a420fb9acc30962f3fd4a`.
-- Incremental demo update retains the previous hashed JS/CSS files; the new HTML references only the current build. Player saves are preserved.
+- Current build: 175 files, 6,213,367 bytes. Each published current file verified byte-for-byte against dist.
+- Archive: `cubeling-defense-standalone-2026-10-31-5de8876.zip`, 3,624,878 bytes, source worktree `build/releases/`.
+- SHA-256: `0248b9fcbf69313159c772bec4f49f9a5a89dd3d44144a1a4119378b72624401`.
+- Incremental update retains previous hashed JS/CSS files and standalone image fallbacks. HTML references the new runtime. Player saves preserved.
 
-Mobile upgrades now use the approved full art board and real controls. The previous small-screen breakpoint hid it and replaced backgrounds, tower cards and level navigation with a simplified proxy UI. Portrait and landscape now retain the existing design and scale to the viewport; rotating does not recreate the dialog.
+Fix mobile pointer capture for battlefield placement and Loadout drags; retain tap selection and prevent drag-generated clicks. Add delegated sound for dynamic buttons/selectors while preserving dedicated sounds, mute and randomized SFX pitch. Fit long English defeat buttons at 320px portrait width.
 
-Runtime improvements: cache HUD nodes and number formatters, avoid unchanged DOM/health-bar writes, replace full target sorting with equivalent linear selection, reuse enemy lookup indexes, and load only portraits needed by the visible route/report page. Hidden Research guidance no longer requests its icon at startup. Existing priority loading, image pack/atlas, English Loading default, audio compression and flying coins are retained.
+Loading: prewarm frequent audio independently of UI, limit model speculation to near-term levels/towers, skip obsolete reference/design images in background preloads, prepare research before optional portraits, and avoid flashing loading on already-cached transitions. Pack 25 common/research images into two requests, preserving every original pixel. Duplicate GLB buffers removed losslessly (141,228 raw bytes). Audio already totals only 446,082 bytes and was not recompressed again. Retained image fallbacks mean the archive is larger; the optimization targets request latency and unnecessary startup downloads, not the total ZIP size.
 
-Validation: TypeScript, ESLint, 52 focused tests and standalone build pass. Desktop Chromium viewport checks cover 320×568, 375×667, 390×844, 667×375 and 844×390; observed 59 images decoded and 39 sized controls within the viewport. Upgrade purchase works. Fresh production build completed tutorial placement, combat, victory and opening upgrades without console errors. These are viewport tests, not physical Android Edge certification.
+Validation: typecheck, lint, 16 focused tests and standalone build pass. Full suite 553/554 pass; the previously reproduced baseline campaign strategy-search failure at level 16 remains. Desktop browser 320×568 checks confirm complete art, fitting English defeat buttons, Loadout drag and battle placement. Touch event regression tests cover implicit pointer-capture transfer and cancellation; physical Android Edge remains to be retested on the user's device. Production preview displays upgrades without runtime errors. No online cold-start timing guarantee.
 
-Full suite: 549/550 pass. The bounded campaign-planner test fails at level 16 on both this revision and pristine prior `676a6be`; recorded as an existing issue. Difficulty was not altered to satisfy the search.
-
-Details: source `docs/cube-playtest-v059.md`. No new art, stat/balance or player-save changes.
+Details: source `docs/cube-playtest-v060.md`. No new artwork, balance or save format changes.
