@@ -1,16 +1,14 @@
-# Cubeling Defense demo · V066 · 2026-10-31
+# Cubeling Defense demo · V068 · 2026-11-01
 
 - Canonical URL: https://toooughv.github.io/PawGames/Playable/CubelingDefense/
-- Directory renamed from `PokiDemo` to `Playable`; the old game entry redirects with query/hash preserved. Game build unchanged.
-
-- Source: playcanvas_frame / `00_cube_defense` / `a2bafa3`.
+- Source: playcanvas_frame / `00_cube_defense` / `e0f5571`.
 - Build: `npm run build:standalone`; no platform SDK.
-- Current build: 175 files, 5,062,321 bytes. Verified byte-for-byte against dist.
-- Archive: `cubeling-defense-standalone-2026-10-31-a2bafa3.zip`, 2,527,730 bytes, source worktree `build/releases/`.
-- SHA-256: `bd4717e4809474c1d8ff67c92c5d5b837e26d436ddcb024884b2d3d55349d39a`.
-- Runtime: `index-Bzv56Rqq.js`; CSS `index-ChNvU8Cx.css`.
-- Incremental update retains previous hashed files and old MP3 paths for cached clients. New runtime requests only Opus BGM. Player saves preserved.
+- Current build: 175 files, 5,067,519 bytes. Verified byte-for-byte against dist.
+- Archive: `cubeling-defense-standalone-2026-11-01-e0f5571.zip`, 2,529,533 bytes, source worktree `build/releases/`.
+- SHA-256: `15eeb0b513c834c8e3548697e24f2d274de3b9bf3e8e2bfbf14aa705243116cd`.
+- Runtime: `assets/index-C1SNMmPL.js`.
+- Incremental update retains previous hashed files and old MP3 paths for cached clients. Player saves and old PokiDemo redirects preserved.
 
-Adopt user-selected 32 kbps VBR Opus BGM (Ogg container). All three tracks total 189,900 bytes, down from 339,893 bytes (-44.1%). Exact audition candidates, complete duration and channel layout retained. New build contains no duplicate BGM MP3. SFX remain MP3. Night gain remains 0.364 (+30%); Boss pitch and load priority unchanged.
+UI downloads use progress-aware deadlines instead of fixed 15-second aborts. Required SFX and scene models start concurrently in separate queues. Current-level external model textures are hinted before GLB parsing. Continuous background loading begins after first playable, prioritizing next interfaces and tower unlocks. Console `[cube startup]` includes per-stage timings for remote HAR diagnosis.
 
-Validation: 17 focused audio/loading tests, typecheck, lint and standalone build pass. Actual dist audio successfully decoded with PlayCanvas AudioParser in Chromium; SoundInstance played night with loop=true, pitch=1.3, volume=0.364. Android Edge / iOS hardware not tested. Retains V064 continuous background loading and Q60 artwork. Details: source `docs/cube-audio-v066.md`.
+Validation: TypeScript, ESLint, 37 focused tests, standalone build; controlled 18-second delayed UI response succeeded without cancellation/retry, texture requests were reused, battle-to-upgrade rendered without console errors. This is not a claim of a measured remote speedup. Retains Q60 artwork and 32 kbps Opus music. See source `docs/cube-loading-v068.md`.
