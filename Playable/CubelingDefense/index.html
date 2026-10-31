@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cubeling Defense</title>
+        <!-- Discover small first-scene dependencies while the engine bundle downloads. -->
+        <link rel="preload" href="./config/cube-levels.json" as="fetch" crossorigin />
+        <link rel="preload" href="./assets/ui/atlas/icons-0-cff2f4d15ea5.webp" as="fetch" crossorigin />
+        <!-- Vite 按发行模式在 head 中写入对应官方 SDK，早于游戏入口；普通/standalone 构建不引入平台 SDK。 -->
+      <script type="module" crossorigin src="./assets/index-Bzv56Rqq.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index-ChNvU8Cx.css">
+    </head>
+    <body>
+        <canvas id="application-canvas"></canvas>
+        <section id="cube-loading" aria-label="Cubeling Defense">
+            <img
+                class="loading-logo"
+                src="./art/cubeling-defense-logo-loading.svg"
+                alt="Cubeling Defense"
+                draggable="false"
+            />
+            <div class="loading-stage">
+                <i class="loading-island" aria-hidden="true"></i><i class="loading-island small" aria-hidden="true"></i
+                ><img class="loading-tower" src="./assets/ui/upgrade/tower-arrow.webp" alt="" draggable="false" /><button
+                    class="loading-target"
+                    type="button"
+                    aria-label="Tap the cubeling!"
+                >
+                    <img class="loading-enemy" src="./art/cube-icon-v2.webp" alt="" draggable="false" /></button
+                ><i class="loading-arrow" aria-hidden="true"></i><span class="loading-spark" aria-hidden="true">✦</span
+                ><span class="loading-invite">Tap the cubeling!</span>
+            </div>
+            <output class="loading-score" aria-live="polite"><span>HITS</span> <b>0</b></output>
+            <div class="loading-status" role="status">
+                <strong>Loading resources…</strong><progress aria-label="Loading resources…"></progress
+                ><small>Place towers at corners to cover more of the path.</small>
+            </div>
+        </section>
+        <script src="./loading-play.js" defer></script>
+    </body>
+</html>

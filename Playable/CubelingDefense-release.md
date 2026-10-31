@@ -1,5 +1,8 @@
 # Cubeling Defense demo · V066 · 2026-10-31
 
+- Canonical URL: https://toooughv.github.io/PawGames/Playable/CubelingDefense/
+- Directory renamed from `PokiDemo` to `Playable`; the old game entry redirects with query/hash preserved. Game build unchanged.
+
 - Source: playcanvas_frame / `00_cube_defense` / `a2bafa3`.
 - Build: `npm run build:standalone`; no platform SDK.
 - Current build: 175 files, 5,062,321 bytes. Verified byte-for-byte against dist.

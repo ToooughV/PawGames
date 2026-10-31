@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PawGames — moved</title>
+<p>Our playable games have moved. <a id="destination" href="../Playable/">Continue</a>.</p>
+<script>
+const destination = new URL(document.getElementById('destination').href);
+destination.search = location.search;
+destination.hash = location.hash;
+document.getElementById('destination').href = destination.href;
+location.replace(destination.href);
+</script>
+</html>
