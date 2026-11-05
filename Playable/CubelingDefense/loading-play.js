@@ -74,6 +74,24 @@
         for (const animation of animations) animation.cancel();
         animations.clear();
         if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+        // Measure the current responsive composition: a fixed 24px fall misses on phones.
+        const stageRect = root.querySelector('.loading-stage').getBoundingClientRect();
+        const towerRect = tower.getBoundingClientRect();
+        const enemyRect = enemy.getBoundingClientRect();
+        const fromX = towerRect.left + towerRect.width * 0.78 - stageRect.left;
+        const fromY = towerRect.top + towerRect.height * 0.25 - stageRect.top;
+        const toX = enemyRect.left + enemyRect.width * 0.42 - stageRect.left;
+        const toY = enemyRect.top + enemyRect.height * 0.5 - stageRect.top;
+        const distance = Math.hypot(toX - fromX, toY - fromY);
+        const angle = Math.atan2(toY - fromY, toX - fromX);
+        const length = Math.max(12, distance * 0.22);
+        Object.assign(arrow.style, {
+            left: `${fromX}px`,
+            top: `${fromY}px`,
+            width: `${length}px`,
+            transformOrigin: '0 50%'
+        });
+        Object.assign(spark.style, { left: `${toX}px`, top: `${toY - 14}px` });
         animate(
             tower,
             [
@@ -86,8 +104,8 @@
         animate(
             arrow,
             [
-                { opacity: 1, transform: 'translateX(-10%) rotate(12deg)' },
-                { opacity: 1, transform: 'translate(110%,24px) rotate(12deg)' }
+                { opacity: 1, transform: `rotate(${angle}rad) translateX(0)` },
+                { opacity: 1, transform: `rotate(${angle}rad) translateX(${Math.max(0, distance - length - 7)}px)` }
             ],
             160
         );
