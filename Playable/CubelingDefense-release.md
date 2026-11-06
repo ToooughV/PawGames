@@ -1,14 +1,15 @@
-# Cubeling Defense demo · V070 · 2026-11-05
+# Cubeling Defense demo · V090 · 2026-11-07
 
 - Canonical URL: https://toooughv.github.io/PawGames/Playable/CubelingDefense/
-- Source: playcanvas_frame / `00_cube_defense` / `5b9c364`.
-- Build: `npm run build:standalone`; no platform SDK.
-- Current build: 178 files, 5,140,515 bytes; all copied files verified byte-for-byte.
-- ZIP: `cubeling-defense-github-2026-11-05-5b9c364.zip`, 2,645,544 bytes.
-- ZIP SHA-256: `13e273c7162d39f2aabd10b35d20e1bfac33fadce897ff7432dc20a52721d3d4`.
-- Runtime: `assets/index-mT_Besyh.js`; CSS: `assets/index-BQREnDM0.css`.
-- Previous files retained for cached clients; saves and legacy PokiDemo redirects preserved.
+- Source: playcanvas_frame / `00_cube_defense` / `fe2488a`.
+- Build: `npm run build:standalone -- --outDir build/releases/2026-11-07-fe2488a/standalone`; no platform SDK.
+- Current build: 223 files, 6,007,114 bytes; all copied files verified byte-for-byte.
+- ZIP: `cubeling-defense-github-fe2488a.zip`, 3,316,647 bytes; archived beside the source build.
+- ZIP SHA-256: `15257cdea22cff87b2cb46104a1518ab0fd20fc2efb7ee5c28e36775f1568fb2`.
+- Entry SHA-256: `fee360a4a021aa7917dd3ca4b4e07a0795a1b283c0609c5f9c4a07d1283fbd0c`.
+- Runtime: `assets/index-CZXZ9UiD.js`; CSS: `assets/index-BHH3AdJw.css`.
+- Previous files retained for cached clients; saves and legacy PokiDemo redirects preserved. Compatibility files are excluded from the current-build size above.
 
-New transparent loading illustration, redesigned logo, sharper arrow tower and corrected responsive toy positions. Battle and unlock UI fragments use two separate priority packs, reducing those 13 requests to 2. Marketing covers are not shipped in the runtime directory.
+Updates include the expanded tower roster and active skills, preparation navigation, revised campaign and audio, and the latest upgrade economy. Range increments use M=3,4,5,6 (cap 6); tower capacity uses M=3,4,5 (cap 5). Opening discounts are removed; historical purchases retain their actual refund prices.
 
-Validation: platform build checks, 20 SDK/storage tests; all production files match the V070 build previously validated through mobile touch simulation from first tower to victory and upgrade. Source evidence and limitations: `docs/cube-loading-v068.md`. This does not establish online cold-load timing or physical Android device compatibility.
+Validation: 636 source tests, TypeScript, ESLint, standalone platform build checks; production browser smoke test opens battle and preparation/settings at 1920×879, 1280×720, 844×390, 640×360, 390×844 and 320×568, with no page errors or HTTP failures. Local evidence: source build folder `build/releases/2026-11-07-fe2488a/`. This is not a physical-device or cold-network performance measurement.
