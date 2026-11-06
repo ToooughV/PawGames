@@ -1,15 +1,14 @@
-# Cubeling Defense demo · V092 · 2026-11-07
+# Cubeling Defense demo · V093 · 2026-11-07
 
 - Canonical URL: https://toooughv.github.io/PawGames/Playable/CubelingDefense/
-- Source: playcanvas_frame / `00_cube_defense` / `7488a35`.
-- Build: `npm run build:standalone -- --outDir build/expansion-v092/standalone`; no platform SDK.
-- Current build: 223 files, 6,008,098 bytes; all copied files verified byte-for-byte.
-- ZIP: `cubeling-defense-github-v092.zip`, 3,316,771 bytes.
-- ZIP SHA-256: `33dc337d6fdbf48b724748585a508f4d5a7d0c4f0b6892bb28d7774446a2c6d6`.
-- Runtime: `assets/index-BGgYH6Wf.js`; CSS: `assets/index-BHH3AdJw.css`.
-- Previous files retained for cached clients; saves and legacy PokiDemo redirects preserved. Compatibility files are excluded from current-build size.
+- Source: playcanvas_frame / `00_cube_defense` / `ab4140e`.
+- Build: `npm run build:standalone -- --outDir build/expansion-v093/standalone`; no platform SDK.
+- Current build: 199 files, 5,637,014 bytes; all copied files verified byte-for-byte.
+- ZIP: `cubeling-defense-github-v093.zip`, 2,989,959 bytes.
+- ZIP SHA-256: `8dc9078bf1caf7e7ed06c442ac39bb7235792667edb2f6d33529eab512d9b2bc`.
+- Runtime: `assets/index-BaRLi-rb.js`; CSS: `assets/index-FTQbW9YS.css`.
+- Previous files retained for cached clients; saves and legacy PokiDemo redirects preserved. Compatibility files are excluded from current-build size and the new entry does not request duplicate aliases.
 
-Enemy health increases 25% from stage 5 inclusive; stages 1–4 and spawn pacing are unchanged. Tower range increments use N=1250 and M=4,5,6,7 (cap 7); capacity uses N=1000 and M=4,5,6 (cap 6). Entry prices are unchanged. Historical purchases keep their actual refunds. Active-skill upgrade prices remain unchanged.
+Lightning texture converted to WebP Q60 with identical alpha, 72,564 to 20,428 bytes. Removed 24 duplicate UI images and duplicate payloads across screen packs; shared paths resolve to one request/decoded resource. Dialog portraits reuse preloaded images. Next-level models load alongside next-screen UI; lightning mesh/texture loads run in parallel. Gameplay tuning remains V092: +25% health from stage 5 inclusive.
 
-Validation: final standalone and CrazyGames builds pass platform artifact checks. Per user instruction, no gameplay tests rerun for the final +25% tuning. Earlier +50% simulation results are not acceptance evidence for this version.
-
+Validation: 31 loading/queue/UI tests, TypeScript and ESLint passed. Production browser smoke checks across six viewport sizes plus upgrade/research/active-skill tabs report no missing visible images, page exceptions or failed HTTP requests. Final standalone and CrazyGames builds pass artifact checks. No gameplay balance rerun or user-network timing claim.
