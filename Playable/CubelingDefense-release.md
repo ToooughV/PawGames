@@ -26,3 +26,9 @@
 - `check-platform-build` passed for both standalone and production; neither contains an SDK script and no asset escapes the build root.
 - Local browser: standalone reached the first battle with zero page errors and zero broken images; the production build rendered the level-1 preparation screen with its art and UI packs intact.
 - 654 tests, 652 pass. The two failures remain the twenty-level campaign simulation (V27 prices make level 8 unaffordable in the greedy model) and the pre-existing research UI platform-relative asset assertion.
+
+## GitHub publication
+
+- Site commit: `6d52935` on PawGames/`main`.
+- Live HTML references `assets/index-Cb4MoO97.js`; the live JS (SHA-256 `30b1a765…93763`) and CSS (SHA-256 `536ffccf…a3667`) match the local build byte-for-byte.
+- Live browser check reached the first battle with zero page errors and zero broken images; the entry and stylesheet both return HTTP 200.
