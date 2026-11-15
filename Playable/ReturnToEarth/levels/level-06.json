@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "id": "level-06",
+  "name": "新关卡",
+  "designWidth": 1920,
+  "designHeight": 1080,
+  "spawn": {
+    "planetId": "origin",
+    "orbitRadius": 0.9,
+    "angleDegrees": 90,
+    "clockwise": true
+  },
+  "planets": [
+    {
+      "style": "crater",
+      "id": "origin",
+      "name": "初始星球",
+      "x": -4.513329,
+      "y": 1.653457,
+      "radius": 0.3,
+      "mass": 0.3,
+      "gravityRadius": 1.77,
+      "isGoal": false
+    },
+    {
+      "id": "earth",
+      "name": "地球",
+      "x": 5.174712,
+      "y": -1.283862,
+      "radius": 0.48,
+      "mass": 1,
+      "gravityRadius": 1.6,
+      "isGoal": true
+    },
+    {
+      "id": "planet-1",
+      "name": "星球 1",
+      "x": 0.949404,
+      "y": 1.455506,
+      "radius": 0.4,
+      "mass": 0.15,
+      "gravityRadius": 2.2,
+      "isGoal": false
+    },
+    {
+      "id": "planet-2",
+      "name": "星球 2",
+      "x": -1.309074,
+      "y": -1.79144,
+      "radius": 0.26,
+      "mass": 0.3,
+      "gravityRadius": 2.19,
+      "isGoal": false
+    }
+  ]
+}

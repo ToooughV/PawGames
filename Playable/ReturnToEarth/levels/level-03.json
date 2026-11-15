@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "id": "level-03",
+  "name": "新关卡",
+  "designWidth": 1920,
+  "designHeight": 1080,
+  "spawn": {
+    "planetId": "origin",
+    "orbitRadius": 0.9,
+    "angleDegrees": 90,
+    "clockwise": true
+  },
+  "planets": [
+    {
+      "style": "storm",
+      "id": "origin",
+      "name": "初始星球",
+      "x": -2.65664,
+      "y": 0.466712,
+      "radius": 0.42,
+      "mass": 0.3,
+      "gravityRadius": 3.04,
+      "isGoal": false
+    },
+    {
+      "id": "earth",
+      "name": "地球",
+      "x": 4.070351,
+      "y": -0.840385,
+      "radius": 0.38,
+      "mass": 1,
+      "gravityRadius": 1.84,
+      "isGoal": true
+    }
+  ]
+}

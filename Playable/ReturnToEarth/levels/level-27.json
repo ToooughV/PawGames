@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "id": "level-27",
+  "name": "新关卡",
+  "designWidth": 1920,
+  "designHeight": 1080,
+  "spawn": {
+    "planetId": "origin",
+    "orbitRadius": 0.9,
+    "angleDegrees": 90,
+    "clockwise": true
+  },
+  "planets": [
+    {
+      "id": "origin",
+      "name": "初始星球",
+      "x": -4.175588,
+      "y": -1.340505,
+      "radius": 0.2,
+      "mass": 0.3,
+      "gravityRadius": 1.21,
+      "isGoal": false
+    },
+    {
+      "id": "earth",
+      "name": "地球",
+      "x": 4.859227,
+      "y": 1.126023,
+      "radius": 0.56,
+      "mass": 1,
+      "gravityRadius": 2.14,
+      "isGoal": true
+    },
+    {
+      "kind": "planet",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-1",
+      "name": "星球 1",
+      "x": -2.834151,
+      "y": 2.345884,
+      "radius": 0.14,
+      "mass": 0.3,
+      "gravityRadius": 1.5,
+      "isGoal": false
+    },
+    {
+      "kind": "blackhole",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-2",
+      "name": "黑洞 2",
+      "x": 1.428544,
+      "y": 1.13943,
+      "radius": 0.23,
+      "mass": 1,
+      "gravityRadius": 1.29,
+      "isGoal": false
+    },
+    {
+      "kind": "planet",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-3",
+      "name": "星球 3",
+      "x": -1.306017,
+      "y": 0.013405,
+      "radius": 0.14,
+      "mass": 0.3,
+      "gravityRadius": 1.31,
+      "isGoal": false
+    },
+    {
+      "kind": "meteor",
+      "vx": 0.04,
+      "vy": -0.04,
+      "id": "planet-4",
+      "name": "陨石 4",
+      "x": 0.490215,
+      "y": 2.694415,
+      "radius": 0.15,
+      "mass": 0,
+      "gravityRadius": 0.15,
+      "isGoal": false
+    },
+    {
+      "kind": "meteor",
+      "vx": 0.04,
+      "vy": 0,
+      "id": "planet-5",
+      "name": "陨石 5",
+      "x": -0.89047,
+      "y": 3.297642,
+      "radius": 0.15,
+      "mass": 0,
+      "gravityRadius": 0.15,
+      "isGoal": false
+    },
+    {
+      "kind": "planet",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-6",
+      "name": "星球 6",
+      "x": 1.38833,
+      "y": -1.541581,
+      "radius": 0.15,
+      "mass": 0.3,
+      "gravityRadius": 1.33,
+      "isGoal": false
+    }
+  ]
+}

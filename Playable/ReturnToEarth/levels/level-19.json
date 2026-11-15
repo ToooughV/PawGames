@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "id": "level-19",
+  "name": "新关卡",
+  "designWidth": 1920,
+  "designHeight": 1080,
+  "spawn": {
+    "planetId": "origin",
+    "orbitRadius": 0.9,
+    "angleDegrees": 90,
+    "clockwise": true
+  },
+  "planets": [
+    {
+      "id": "origin",
+      "name": "初始星球",
+      "x": -1.521457,
+      "y": -0.013405,
+      "radius": 0.25,
+      "mass": 0.3,
+      "gravityRadius": 1.24,
+      "isGoal": false
+    },
+    {
+      "id": "earth",
+      "name": "地球",
+      "x": 4.886036,
+      "y": -0.02681,
+      "radius": 0.19,
+      "mass": 1,
+      "gravityRadius": 1.24,
+      "isGoal": true
+    },
+    {
+      "kind": "planet",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-1",
+      "name": "星球 1",
+      "x": 1.643019,
+      "y": 0.026812,
+      "radius": 0.13,
+      "mass": 0.3,
+      "gravityRadius": 1.95,
+      "isGoal": false
+    },
+    {
+      "kind": "planet",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-2",
+      "name": "星球 2",
+      "x": 3.385629,
+      "y": -0.08043,
+      "radius": 0.29,
+      "mass": 0.3,
+      "gravityRadius": 1.45,
+      "isGoal": false
+    },
+    {
+      "kind": "meteor",
+      "vx": 0.13,
+      "vy": 0.03,
+      "id": "planet-3",
+      "name": "陨石 3",
+      "x": -4.952094,
+      "y": 0.697062,
+      "radius": 0.15,
+      "mass": 0,
+      "gravityRadius": 0.15,
+      "isGoal": false
+    },
+    {
+      "kind": "meteor",
+      "vx": 0.03,
+      "vy": 0.01,
+      "id": "planet-4",
+      "name": "陨石 4",
+      "x": -5.019118,
+      "y": -0.415555,
+      "radius": 0.15,
+      "mass": 0,
+      "gravityRadius": 0.15,
+      "isGoal": false
+    },
+    {
+      "kind": "meteor",
+      "vx": 0.05,
+      "vy": 0.04,
+      "id": "planet-5",
+      "name": "陨石 5",
+      "x": -4.188026,
+      "y": -0.965165,
+      "radius": 0.2,
+      "mass": 0,
+      "gravityRadius": 0.2,
+      "isGoal": false
+    },
+    {
+      "kind": "meteor",
+      "vx": 0.01,
+      "vy": 0.03,
+      "id": "planet-6",
+      "name": "陨石 6",
+      "x": -5.903828,
+      "y": -1.461149,
+      "radius": 0.15,
+      "mass": 0,
+      "gravityRadius": 0.15,
+      "isGoal": false
+    }
+  ]
+}

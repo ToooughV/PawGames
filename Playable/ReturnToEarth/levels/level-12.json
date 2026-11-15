@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "id": "level-12",
+  "name": "新关卡",
+  "designWidth": 1920,
+  "designHeight": 1080,
+  "spawn": {
+    "planetId": "origin",
+    "orbitRadius": 0.9,
+    "angleDegrees": 90,
+    "clockwise": true
+  },
+  "planets": [
+    {
+      "id": "origin",
+      "name": "初始星球",
+      "x": -4.872632,
+      "y": -2.506743,
+      "radius": 0.14,
+      "mass": 0.3,
+      "gravityRadius": 1.19,
+      "isGoal": false
+    },
+    {
+      "id": "earth",
+      "name": "地球",
+      "x": 5.743937,
+      "y": 2.359288,
+      "radius": 0.29,
+      "mass": 1,
+      "gravityRadius": 1.44,
+      "isGoal": true
+    },
+    {
+      "kind": "planet",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-1",
+      "name": "星球 1",
+      "x": -3.692053,
+      "y": 0.965164,
+      "radius": 0.52,
+      "mass": 0.3,
+      "gravityRadius": 4.98,
+      "isGoal": false
+    },
+    {
+      "kind": "planet",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-2",
+      "name": "星球 2",
+      "x": 2.125588,
+      "y": -1.809682,
+      "radius": 0.4,
+      "mass": 0.3,
+      "gravityRadius": 4.74,
+      "isGoal": false
+    },
+    {
+      "kind": "planet",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-3",
+      "name": "星球 3",
+      "x": -0.541947,
+      "y": -1.340505,
+      "radius": 0.13,
+      "mass": 0.3,
+      "gravityRadius": 1.28,
+      "isGoal": false
+    },
+    {
+      "kind": "planet",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-4",
+      "name": "星球 4",
+      "x": 1.254282,
+      "y": 1.340505,
+      "radius": 0.28,
+      "mass": 0.3,
+      "gravityRadius": 2.08,
+      "isGoal": false
+    }
+  ]
+}

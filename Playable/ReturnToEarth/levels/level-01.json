@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "id": "level-01",
+  "name": "01 / 初次启航",
+  "designWidth": 1920,
+  "designHeight": 1080,
+  "spawn": {
+    "planetId": "origin",
+    "orbitRadius": 0.9,
+    "angleDegrees": 90,
+    "clockwise": true
+  },
+  "planets": [
+    {
+      "style": "desert",
+      "id": "origin",
+      "name": "初始星球",
+      "x": -2.5,
+      "y": 0,
+      "radius": 0.5,
+      "mass": 0.3,
+      "gravityRadius": 1.65,
+      "isGoal": false
+    },
+    {
+      "id": "earth",
+      "name": "地球",
+      "x": 3.589337,
+      "y": -0.038905,
+      "radius": 1,
+      "mass": 1,
+      "gravityRadius": 3.57,
+      "isGoal": true
+    }
+  ]
+}
