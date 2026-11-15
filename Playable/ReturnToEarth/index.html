@@ -8,11 +8,28 @@
         <!-- Paint the deep-space base before any module loads, so the first paint is never white. -->
         <style>html,body{background:#0b0f19;margin:0;padding:0}body{overflow:hidden}#application-canvas{display:block}</style>
         <!-- Vite 按发行模式在 head 中写入对应官方 SDK，早于游戏入口；普通构建不引入平台 SDK。 -->
-      <script type="module" crossorigin src="./assets/game-lzDuusCa.js"></script>
+      <script type="module" crossorigin src="./assets/game-B5s4BknM.js"></script>
       <link rel="modulepreload" crossorigin href="./assets/levelData-CfHIfc0m.js">
-      <link rel="stylesheet" crossorigin href="./assets/game-Bj--XdT9.css">
+      <link rel="stylesheet" crossorigin href="./assets/game-CGnDGKL6.css">
     </head>
     <body>
+        <div
+            id="boot-indicator"
+            role="progressbar"
+            aria-label="Loading"
+            style="
+                position: fixed;
+                inset: 0;
+                z-index: 100;
+                display: grid;
+                place-items: center;
+                background: #0b0f19;
+                color: #64e5da;
+                pointer-events: none;
+            "
+        >
+            <progress style="width: min(140px, 30vw); accent-color: currentColor"></progress>
+        </div>
         <canvas id="application-canvas"></canvas>
     </body>
 </html>
