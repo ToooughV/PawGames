@@ -33,23 +33,40 @@
       "isGoal": true
     },
     {
+      "vx": 0,
+      "vy": 0,
       "id": "planet-1",
       "name": "星球 1",
-      "x": -0.403851,
-      "y": 1.940709,
+      "x": -1.301966,
+      "y": 2.383076,
       "radius": 0.23,
       "mass": 0.54,
       "gravityRadius": 1.89,
       "isGoal": false
     },
     {
+      "vx": 0,
+      "vy": 0,
       "id": "planet-2",
       "name": "星球 2",
       "x": 1.186825,
-      "y": -1.961271,
+      "y": -1.93446,
       "radius": 0.4,
       "mass": 0.3,
       "gravityRadius": 1.82,
+      "isGoal": false
+    },
+    {
+      "kind": "planet",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-3",
+      "name": "星球 3",
+      "x": 2.299849,
+      "y": 1.501366,
+      "radius": 0.31,
+      "mass": 0.3,
+      "gravityRadius": 1.73,
       "isGoal": false
     }
   ]

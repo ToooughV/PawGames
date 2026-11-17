@@ -12,8 +12,8 @@
   },
   "planets": [
     {
-      "id": "origin",
       "style": "desert",
+      "id": "origin",
       "name": "初始星球",
       "x": -4.0951,
       "y": 0.155618,
@@ -35,11 +35,24 @@
     {
       "id": "planet-1",
       "name": "星球 1",
-      "x": 0.01232,
-      "y": 0.311239,
+      "x": -0.014489,
+      "y": 1.410453,
       "radius": 0.4,
       "mass": 0.3,
-      "gravityRadius": 1.95,
+      "gravityRadius": 1.4,
+      "isGoal": false
+    },
+    {
+      "kind": "planet",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-2",
+      "name": "星球 2",
+      "x": -0.112998,
+      "y": -0.710469,
+      "radius": 0.2,
+      "mass": 0.48,
+      "gravityRadius": 1.7,
       "isGoal": false
     }
   ]

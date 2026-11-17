@@ -15,8 +15,8 @@
       "style": "glacier",
       "id": "origin",
       "name": "初始星球",
-      "x": -2.782057,
-      "y": 1.458933,
+      "x": -3.130579,
+      "y": 1.150617,
       "radius": 0.31,
       "mass": 0.12,
       "gravityRadius": 2.17,
@@ -25,11 +25,11 @@
     {
       "id": "earth",
       "name": "地球",
-      "x": 2.801521,
-      "y": -1.108789,
+      "x": 4.59775,
+      "y": -1.229435,
       "radius": 0.48,
       "mass": 1,
-      "gravityRadius": 2.4,
+      "gravityRadius": 1.64,
       "isGoal": true
     }
   ]

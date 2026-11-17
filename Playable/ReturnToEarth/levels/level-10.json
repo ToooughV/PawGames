@@ -14,11 +14,11 @@
     {
       "id": "origin",
       "name": "初始星球",
-      "x": -2.27212,
-      "y": -0.067025,
+      "x": -4.054945,
+      "y": -1.112619,
       "radius": 0.2,
       "mass": 0.49,
-      "gravityRadius": 4.27,
+      "gravityRadius": 2.11,
       "isGoal": false
     },
     {
@@ -37,8 +37,8 @@
       "vy": 0,
       "id": "planet-1",
       "name": "星球 1",
-      "x": 0.852142,
-      "y": -2.064376,
+      "x": 0.396382,
+      "y": -1.99735,
       "radius": 0.17,
       "mass": 0.3,
       "gravityRadius": 1.7,
@@ -50,8 +50,8 @@
       "vy": 0,
       "id": "planet-2",
       "name": "星球 2",
-      "x": -0.072784,
-      "y": 1.595201,
+      "x": 0.356167,
+      "y": 1.689036,
       "radius": 0.29,
       "mass": 0.58,
       "gravityRadius": 1.91,
@@ -68,6 +68,32 @@
       "radius": 0.22,
       "mass": 0.3,
       "gravityRadius": 1.25,
+      "isGoal": false
+    },
+    {
+      "kind": "meteor",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-4",
+      "name": "陨石 4",
+      "x": 2.983489,
+      "y": -1.54158,
+      "radius": 0.27,
+      "mass": 0,
+      "gravityRadius": 0.27,
+      "isGoal": false
+    },
+    {
+      "kind": "meteor",
+      "vx": 0,
+      "vy": 0,
+      "id": "planet-5",
+      "name": "陨石 5",
+      "x": 3.278392,
+      "y": 2.426314,
+      "radius": 0.15,
+      "mass": 0,
+      "gravityRadius": 0.15,
       "isGoal": false
     }
   ]

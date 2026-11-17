@@ -33,6 +33,8 @@
       "isGoal": true
     },
     {
+      "vx": 0,
+      "vy": 0,
       "id": "planet-1",
       "name": "星球 1",
       "x": 0.949404,
@@ -43,6 +45,8 @@
       "isGoal": false
     },
     {
+      "vx": 0,
+      "vy": 0,
       "id": "planet-2",
       "name": "星球 2",
       "x": -1.309074,

@@ -52,8 +52,8 @@
       "vy": 0,
       "id": "planet-2",
       "name": "星球 2",
-      "x": -1.024519,
-      "y": -2.010757,
+      "x": -1.051329,
+      "y": -0.924948,
       "radius": 0.1,
       "mass": 0.3,
       "gravityRadius": 1.7,
@@ -65,11 +65,11 @@
       "vy": 0,
       "id": "planet-3",
       "name": "星球 3",
-      "x": 1.844089,
-      "y": -0.911543,
+      "x": 2.138993,
+      "y": -1.43434,
       "radius": 0.2,
       "mass": 0.3,
-      "gravityRadius": 1.92,
+      "gravityRadius": 1.45,
       "isGoal": false
     }
   ]

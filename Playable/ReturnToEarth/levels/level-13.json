@@ -37,11 +37,11 @@
       "vy": 0,
       "id": "planet-1",
       "name": "星球 1",
-      "x": 0.235525,
-      "y": 1.648821,
+      "x": 0.222121,
+      "y": 1.662226,
       "radius": 0.84,
       "mass": 0.3,
-      "gravityRadius": 5.16,
+      "gravityRadius": 3.05,
       "isGoal": false
     },
     {

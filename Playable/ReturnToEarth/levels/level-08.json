@@ -24,8 +24,8 @@
     {
       "id": "earth",
       "name": "地球",
-      "x": 4.819013,
-      "y": -0.777492,
+      "x": 5.261368,
+      "y": -1.742656,
       "radius": 0.51,
       "mass": 1,
       "gravityRadius": 1.71,
@@ -37,11 +37,11 @@
       "vy": 0,
       "id": "planet-1",
       "name": "星球 1",
-      "x": 0.315953,
-      "y": 0.455771,
+      "x": 0.624261,
+      "y": 0.670251,
       "radius": 0.4,
-      "mass": 1.88,
-      "gravityRadius": 5.14,
+      "mass": 1.31,
+      "gravityRadius": 3.5,
       "isGoal": false
     }
   ]
