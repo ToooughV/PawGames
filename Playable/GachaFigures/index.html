@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="./favicon.png" />
         <title>Gacha Figures</title>
         <link
             rel="preload"
@@ -20,7 +21,8 @@
         />
         <!-- Vite 按发行模式在 head 中写入对应官方 SDK，早于游戏入口；普通构建不引入平台 SDK。 -->
         <style>html[data-gacha-loading]{--loading-width:min(100vw, calc(100vh * 16 / 9));--loading-height:min(100vh, calc(100vw * 9 / 16));--loading-width-factor:.396;--loading-label-offset:.321;--loading-meter-offset:.091;--loading-meter-height:.022;--loading-art:url(assets/ui/gacha/loading-landscape.webp);background:#211029}@media (aspect-ratio<1){html[data-gacha-loading]{--loading-width:min(100vw, calc(100vh * 9 / 16));--loading-height:min(100vh, calc(100vw * 16 / 9));--loading-width-factor:.696;--loading-label-offset:.302;--loading-meter-offset:.073;--loading-meter-height:.021;--loading-art:url(assets/ui/gacha/loading-portrait.webp)}}html[data-gacha-loading] body{background:0 0}html[data-gacha-loading] #application-canvas{opacity:0;pointer-events:none}html[data-gacha-loading]:before,html[data-gacha-loading]:after{z-index:100;pointer-events:none;position:fixed;left:50%}html[data-gacha-loading]:before{content:"";width:var(--loading-width);height:var(--loading-height);background:var(--loading-art) center / contain no-repeat;image-rendering:pixelated;top:50%;transform:translate(-50%,-50%)}html[data-gacha-loading]:after{content:var(--gacha-loading-label,"Loading toys…");top:calc(50% + var(--loading-height) * var(--loading-label-offset));width:calc(var(--loading-width) * var(--loading-width-factor));height:calc(var(--loading-height) * var(--loading-meter-offset));color:#fff0bd;font:700 clamp(11px, calc(var(--loading-height) * .026), 34px) / 1.15 "Gacha Pixelify Sans", "Gacha Store Pixel", "Gacha Rare Pixel", monospace;text-align:center;text-shadow:0 2px #240d27;background:linear-gradient(#fff6aa 0 26%, #ffc249 27% 76%, #e28a31 77%) left bottom / var(--gacha-load-progress,0%) calc(var(--loading-height) * var(--loading-meter-height)) no-repeat, repeating-linear-gradient(115deg, #321035 0 9px, #47204c 9px 18px) left bottom / calc(100% + 24px) calc(var(--loading-height) * var(--loading-meter-height)) no-repeat;border-radius:3px;animation:.85s linear infinite gacha-loading-stripes;transform:translate(-50%)}@keyframes gacha-loading-stripes{to{background-position:0 100%,left -20px bottom}}@media (prefers-reduced-motion:reduce){html[data-gacha-loading]:after{animation:none}}</style>
-      <script type="module" crossorigin src="./assets/index-x5oZ54U4.js"></script>
+      <script type="module" crossorigin src="./assets/index-CgY6o1Lg.js"></script>
+      <link rel="modulepreload" crossorigin href="./assets/playcanvas-KD186chC.js">
       <link rel="stylesheet" crossorigin href="./assets/index-CqTIpDRR.css">
     </head>
     <body>
