@@ -28,5 +28,6 @@
 
 ## GitHub publication
 
-- Site commit: `<pending>` on PawGames/`main`.
-- The new entry, game chunk, stylesheet and font hashes above will be checked against the live site after Pages deploys. The previous `index-CwzuUNMd.js` bundle stays in the folder for cached clients.
+- Site commit: `67da227` on PawGames/`main`.
+- Live `index.html`, `assets/index-CcMm64vA.js`, `assets/boot-BJnRAY8q.js` and `assets/boot-DjP3D4zy.css` all return HTTP 200 and match the local SHA-256 hashes above. The previous `index-C01zwaQN.js` and earlier bundles stay in the folder for cached clients.
+- Live browser check: entry `index-CcMm64vA.js`, no startup error panel, zero broken images. Settings opens in about 55 ms, all four BGM tracks are requested immediately after the art gate, and battle music starts on the first gesture. This test network reached GitHub Pages slowly (HTML TTFB around 8 s), so the cold first screen took about 12 s here; the game's own preload completed without failing.
