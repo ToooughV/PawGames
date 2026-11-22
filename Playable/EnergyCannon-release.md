@@ -25,5 +25,6 @@
 
 ## GitHub publication
 
-- Site commit: `<pending>` on PawGames/`main`.
-- Live verification will match the entry and stylesheet hashes above after Pages deploys.
+- Site commit: `594e56a` on PawGames/`main`.
+- Live `index.html`, `assets/index-CwzuUNMd.js`, `assets/boot-DjP3D4zy.css`, both font subsets, the owned-relics chassis and the menu track all return HTTP 200 and match the local SHA-256 hashes above.
+- Live browser check: first battle reached with zero broken images; the Latin font loads and the legacy `ArkPixel12.woff2` is not requested. Warm reload reaches the first screen in about 2.4 s from cache. The first cold load from this test network was slower because GitHub Pages returned the HTML after about 7 s; that is CDN/TTFB time before the game's own requests start.
