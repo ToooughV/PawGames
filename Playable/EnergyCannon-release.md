@@ -31,6 +31,6 @@
 
 ## GitHub publication
 
-- Site commit: `e12f1da` on PawGames/`main`.
-- Live `index.html`, `assets/index-DISnE12C.js` and `assets/boot-DK50l5c3.js` return HTTP 200 and match the local SHA-256 hashes above. Earlier bundles stay in the folder for cached clients.
-- Restart-dialog check in English, German, French, Turkish and Chinese: both labels share one size per language (31.7–36 px) and the narrowest side gutter is 52 px; no label touches the enamel face.
+- Site commit: `09aba8f` on PawGames/`main`.
+- Live `index.html`, `assets/index-Cfe4p77J.js`, `assets/boot-ClC3mKRc.js` and the starter atlas page return HTTP 200 and match the local SHA-256 hashes above. Earlier bundles and the previous atlas pages stay in the folder for cached clients.
+- First-screen check: the starter atlas finishes inside the boot gate, all four deck/warehouse module pieces render from it at full opacity, and there are no broken images.
