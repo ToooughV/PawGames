@@ -29,6 +29,6 @@
 
 ## GitHub publication
 
-- Site commit: `8abb751` on PawGames/`main`.
-- Live `index.html`, `assets/index-DoXlJPA4.js` and `assets/boot-C3RC4irN.js` return HTTP 200 and match the local SHA-256 hashes above. Earlier bundles stay in the folder for cached clients.
-- Restart-dialog check in English, German, French, Turkish and Chinese: every label fits inside its key with 37–77 px side gaps; the English buttons share the 36 px size (`Keep voyage` 70 px gap, `Start new voyage` 41 px gap).
+- Site commit: `e12f1da` on PawGames/`main`.
+- Live `index.html`, `assets/index-DISnE12C.js` and `assets/boot-DK50l5c3.js` return HTTP 200 and match the local SHA-256 hashes above. Earlier bundles stay in the folder for cached clients.
+- Restart-dialog check in English, German, French, Turkish and Chinese: both labels share one size per language (31.7–36 px) and the narrowest side gutter is 52 px; no label touches the enamel face.
