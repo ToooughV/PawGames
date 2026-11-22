@@ -28,7 +28,7 @@ Copyright (c) 2022, TakWolf (https://takwolf.com).
 https://github.com/TakWolf/fusion-pixel-font
 Release: 2026.11.10 (a38a5de)
 Source archive: fusion-pixel-font-12px-proportional-ttf.woff2-v2026.11.10.zip
-GachaStorePixel-12px-SC.woff2 is a renamed subset of that archive's zh_hans
+GachaStorePixel-12px-SC-v2.woff2 is a renamed subset of that archive's zh_hans
 file. It retains the game strings' glyphs and common UI punctuation.
 License: SIL OFL 1.1; see fusion-pixel/OFL.txt and fusion-pixel/LICENSES
 for the bundled upstream Ark Pixel, Cubic 11 and Galmuri notices.
