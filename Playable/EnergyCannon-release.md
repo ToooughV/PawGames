@@ -32,6 +32,6 @@
 
 ## GitHub publication
 
-- Site commit: `09aba8f` on PawGames/`main`.
-- Live `index.html`, `assets/index-Cfe4p77J.js`, `assets/boot-ClC3mKRc.js` and the starter atlas page return HTTP 200 and match the local SHA-256 hashes above. Earlier bundles and the previous atlas pages stay in the folder for cached clients.
-- First-screen check: the starter atlas finishes inside the boot gate, all four deck/warehouse module pieces render from it at full opacity, and there are no broken images.
+- Site commit: `731b2d9` on PawGames/`main`.
+- Live `index.html`, `assets/index-BZNIhkPq.js` and `assets/boot-DAB_dE5B.js` return HTTP 200 and match the local SHA-256 hashes above. Earlier bundles and previous atlas pages stay in the folder for cached clients.
+- Runtime check with 75 ms latency and 10 Mbps: first screen about 2.1 s; all reward/debrief/hangar requests finish before the victory report (zero broken images); reward → shop reveals after about 0.75 s with zero broken images. The screen-change curtain caps at 1.2 s.
