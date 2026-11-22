@@ -33,6 +33,6 @@
 
 ## GitHub publication
 
-- Site commit: `731b2d9` on PawGames/`main`.
-- Live `index.html`, `assets/index-BZNIhkPq.js` and `assets/boot-DAB_dE5B.js` return HTTP 200 and match the local SHA-256 hashes above. Earlier bundles and previous atlas pages stay in the folder for cached clients.
-- Runtime check with 75 ms latency and 10 Mbps: first screen about 2.1 s; all reward/debrief/hangar requests finish before the victory report (zero broken images); reward → shop reveals after about 0.75 s with zero broken images. The screen-change curtain caps at 1.2 s.
+- Site commit: `4609cf0` on PawGames/`main`.
+- Live `index.html`, `assets/index-DWOWwI15.js`, `assets/boot-Cj2Dwt0T.js` and `assets/boot-MjvN7_NC.css` return HTTP 200 and match the local SHA-256 hashes above. Earlier bundles and previous atlas pages stay in the folder for cached clients.
+- GamePix draft preview check: the previous draft could stay on “Voyage paused” after the portal lost its resume; this build registers the legacy callbacks and makes the suspended overlay clickable. Re-upload `energy-cannon-gamepix-v1.0.0.zip` to the draft to verify the preview again.
