@@ -9,6 +9,7 @@ Upstream commit recorded in Google Fonts METADATA.pb:
 39df74aba80df8157546034b878e8be1eb565ced
 PixelifySans-Bold.ttf is a static weight-700 instance of the upstream
 PixelifySans[wght].ttf, generated with fontTools 4.68.0 varLib.instancer.
+The runtime file PixelifySans-Bold.woff2 is its lossless WOFF2 conversion.
 No glyph outlines were manually edited. Used for non-Chinese UI text.
 
 Silkscreen by Jason Kottke
@@ -18,16 +19,17 @@ License: SIL Open Font License 1.1; see silkscreen/OFL.txt.
 Source: https://github.com/google/fonts/tree/main/ofl/silkscreen
 Upstream commit recorded in Google Fonts METADATA.pb:
 206ccf3f5234c281461e63ecc59cbc6b0563472b
-Silkscreen-Regular.ttf is bundled unmodified. Used only for U+0030-0039
-through a FontFace unicodeRange; the face is mapped to the UI's weight 700
-descriptor to avoid browser-synthesized bold strokes.
+GachaPixelDigits.woff2 is a renamed U+0030-0039 subset of Silkscreen-Regular.ttf.
+The original digit outlines are unchanged. The face maps to UI weight 700
+to avoid browser-synthesized bold strokes.
 
 Fusion Pixel Font, 12px proportional Simplified Chinese, by TakWolf
 Copyright (c) 2022, TakWolf (https://takwolf.com).
 https://github.com/TakWolf/fusion-pixel-font
 Release: 2026.11.10 (a38a5de)
 Source archive: fusion-pixel-font-12px-proportional-ttf.woff2-v2026.11.10.zip
-FusionPixel-12px-SC.woff2 is the unmodified zh_hans file from that archive.
+GachaStorePixel-12px-SC.woff2 is a renamed subset of that archive's zh_hans
+file. It retains the game strings' glyphs and common UI punctuation.
 License: SIL OFL 1.1; see fusion-pixel/OFL.txt and fusion-pixel/LICENSES
 for the bundled upstream Ark Pixel, Cubic 11 and Galmuri notices.
 Used for Chinese and symbols absent from Pixelify Sans.
@@ -43,3 +45,4 @@ See rare-pixel/OFL.txt and rare-pixel/copyright.txt.
 
 All fonts are bundled locally. The same pixel stack is used for all
 eight languages, including Chinese, numbers, punctuation and symbols.
+The runtime conversions are built with scripts/subset-gacha-fonts.py.

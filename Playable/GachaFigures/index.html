@@ -4,10 +4,24 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gacha Figures</title>
+        <link
+            rel="preload"
+            as="image"
+            href="./assets/ui/gacha/loading-landscape.webp"
+            media="(aspect-ratio >= 1/1)"
+            fetchpriority="high"
+        />
+        <link
+            rel="preload"
+            as="image"
+            href="./assets/ui/gacha/loading-portrait.webp"
+            media="(aspect-ratio < 1/1)"
+            fetchpriority="high"
+        />
         <!-- Vite 按发行模式在 head 中写入对应官方 SDK，早于游戏入口；普通构建不引入平台 SDK。 -->
-        <style>html[data-gacha-loading]{--loading-art-size:min(54vh, 76vw, 424px);--loading-caption-height:clamp(40px, 8vh, 62px);background:#211029 radial-gradient(at 50% 41%,#502650,#211029 72%) 50%/cover no-repeat fixed}html[data-gacha-loading] body{background:0 0}html[data-gacha-loading] #application-canvas{opacity:0;pointer-events:none}html[data-gacha-loading]:before,html[data-gacha-loading]:after{z-index:100;pointer-events:none;position:fixed;left:50%}html[data-gacha-loading]:before{content:"";top:calc(50% - var(--loading-caption-height) / 2 - 8px);width:var(--loading-art-size);aspect-ratio:1;background:#472245 url(assets/ui/gacha/loading.webp) 50%/cover no-repeat;outline:2px solid #ffc664;transform:translate(-50%,-50%);box-shadow:0 0 0 5px #8d482f,0 0 0 8px #31132d,0 10px 36px #1b0d24}html[data-gacha-loading]:after{content:var(--gacha-loading-label,"Loading toys…");top:calc(50% + var(--loading-art-size) / 2 - var(--loading-caption-height) / 2 + 11px);width:min(var(--loading-art-size), 320px);height:var(--loading-caption-height);color:#fff0bd;text-align:center;background:linear-gradient(#fff49c, #f0a84f) left bottom 3px / var(--gacha-load-progress,0%) 8px no-repeat, repeating-linear-gradient(115deg, #482243 0 9px, #65315d 9px 18px) left bottom 3px / calc(100% + 24px) 8px no-repeat, linear-gradient(#d39956, #92613b) left bottom / 100% 14px no-repeat;font:700 clamp(15px,4vh,25px)/1.15 Gacha Pixelify Sans,Gacha Fusion Pixel,monospace;animation:.85s linear infinite gacha-loading-stripes;transform:translate(-50%)}@keyframes gacha-loading-stripes{to{background-position:left bottom 3px,left -20px bottom 3px,0 100%}}@media (prefers-reduced-motion:reduce){html[data-gacha-loading]:after{animation:none}}</style>
-      <script type="module" crossorigin src="./assets/index-Bp61Ws3J.js"></script>
-      <link rel="stylesheet" crossorigin href="./assets/index-Dj287XI9.css">
+        <style>html[data-gacha-loading]{--loading-width:min(100vw, calc(100vh * 16 / 9));--loading-height:min(100vh, calc(100vw * 9 / 16));--loading-width-factor:.396;--loading-label-offset:.321;--loading-meter-offset:.091;--loading-meter-height:.022;--loading-art:url(assets/ui/gacha/loading-landscape.webp);background:#211029}@media (aspect-ratio<1){html[data-gacha-loading]{--loading-width:min(100vw, calc(100vh * 9 / 16));--loading-height:min(100vh, calc(100vw * 16 / 9));--loading-width-factor:.696;--loading-label-offset:.302;--loading-meter-offset:.073;--loading-meter-height:.021;--loading-art:url(assets/ui/gacha/loading-portrait.webp)}}html[data-gacha-loading] body{background:0 0}html[data-gacha-loading] #application-canvas{opacity:0;pointer-events:none}html[data-gacha-loading]:before,html[data-gacha-loading]:after{z-index:100;pointer-events:none;position:fixed;left:50%}html[data-gacha-loading]:before{content:"";width:var(--loading-width);height:var(--loading-height);background:var(--loading-art) center / contain no-repeat;image-rendering:pixelated;top:50%;transform:translate(-50%,-50%)}html[data-gacha-loading]:after{content:var(--gacha-loading-label,"Loading toys…");top:calc(50% + var(--loading-height) * var(--loading-label-offset));width:calc(var(--loading-width) * var(--loading-width-factor));height:calc(var(--loading-height) * var(--loading-meter-offset));color:#fff0bd;font:700 clamp(11px, calc(var(--loading-height) * .026), 34px) / 1.15 "Gacha Pixelify Sans", "Gacha Store Pixel", "Gacha Rare Pixel", monospace;text-align:center;text-shadow:0 2px #240d27;background:linear-gradient(#fff6aa 0 26%, #ffc249 27% 76%, #e28a31 77%) left bottom / var(--gacha-load-progress,0%) calc(var(--loading-height) * var(--loading-meter-height)) no-repeat, repeating-linear-gradient(115deg, #321035 0 9px, #47204c 9px 18px) left bottom / calc(100% + 24px) calc(var(--loading-height) * var(--loading-meter-height)) no-repeat;border-radius:3px;animation:.85s linear infinite gacha-loading-stripes;transform:translate(-50%)}@keyframes gacha-loading-stripes{to{background-position:0 100%,left -20px bottom}}@media (prefers-reduced-motion:reduce){html[data-gacha-loading]:after{animation:none}}</style>
+      <script type="module" crossorigin src="./assets/index-DiG3ecQE.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index-Crt3CIhO.css">
     </head>
     <body>
         <canvas id="application-canvas"></canvas>
