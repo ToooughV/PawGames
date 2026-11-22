@@ -1,0 +1,113 @@
+{
+    "frames": {
+        "modal-batch-portrait": {
+            "atlas": "modal-management",
+            "x": 4,
+            "y": 4,
+            "w": 676,
+            "h": 867
+        },
+        "modal-batch-landscape": {
+            "atlas": "modal-management",
+            "x": 4,
+            "y": 901,
+            "w": 676,
+            "h": 433
+        },
+        "modal-orders-portrait": {
+            "atlas": "modal-management",
+            "x": 690,
+            "y": 4,
+            "w": 676,
+            "h": 875
+        },
+        "modal-orders-landscape": {
+            "atlas": "modal-management",
+            "x": 690,
+            "y": 901,
+            "w": 676,
+            "h": 436
+        },
+        "modal-message": {
+            "atlas": "modal-messages",
+            "x": 4,
+            "y": 4,
+            "w": 720,
+            "h": 439
+        },
+        "modal-night": {
+            "atlas": "modal-messages",
+            "x": 739,
+            "y": 4,
+            "w": 720,
+            "h": 428
+        },
+        "modal-icon-batch": {
+            "atlas": "modal-messages",
+            "x": 4,
+            "y": 461,
+            "w": 232,
+            "h": 156
+        },
+        "modal-icon-orders": {
+            "atlas": "modal-messages",
+            "x": 291,
+            "y": 461,
+            "w": 232,
+            "h": 127
+        },
+        "modal-icon-sell": {
+            "atlas": "modal-messages",
+            "x": 578,
+            "y": 461,
+            "w": 232,
+            "h": 139
+        },
+        "modal-icon-unlock": {
+            "atlas": "modal-messages",
+            "x": 865,
+            "y": 461,
+            "w": 232,
+            "h": 135
+        },
+        "modal-icon-deliver": {
+            "atlas": "modal-messages",
+            "x": 1152,
+            "y": 461,
+            "w": 232,
+            "h": 120
+        },
+        "modal-icon-respec": {
+            "atlas": "modal-messages",
+            "x": 4,
+            "y": 623,
+            "w": 232,
+            "h": 143
+        },
+        "modal-icon-migrate": {
+            "atlas": "modal-messages",
+            "x": 291,
+            "y": 623,
+            "w": 232,
+            "h": 124
+        },
+        "modal-icon-paused": {
+            "atlas": "modal-messages",
+            "x": 578,
+            "y": 623,
+            "w": 232,
+            "h": 117
+        },
+        "modal-icon-save": {
+            "atlas": "modal-messages",
+            "x": 865,
+            "y": 623,
+            "w": 232,
+            "h": 120
+        }
+    },
+    "sizes": {
+        "modal-management": [1380, 1350],
+        "modal-messages": [1480, 822]
+    }
+}

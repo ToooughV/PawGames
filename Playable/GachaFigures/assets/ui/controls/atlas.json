@@ -1,0 +1,77 @@
+{
+    "frames": {
+        "nav-book": {
+            "atlas": "control-art",
+            "x": 4,
+            "y": 4,
+            "w": 640,
+            "h": 95
+        },
+        "nav-display": {
+            "atlas": "control-art",
+            "x": 4,
+            "y": 130,
+            "w": 640,
+            "h": 102
+        },
+        "nav-skills": {
+            "atlas": "control-art",
+            "x": 4,
+            "y": 256,
+            "w": 640,
+            "h": 104
+        },
+        "action-primary": {
+            "atlas": "control-art",
+            "x": 660,
+            "y": 4,
+            "w": 400,
+            "h": 124
+        },
+        "action-secondary": {
+            "atlas": "control-art",
+            "x": 1074,
+            "y": 4,
+            "w": 400,
+            "h": 124
+        },
+        "action-danger": {
+            "atlas": "control-art",
+            "x": 660,
+            "y": 136,
+            "w": 400,
+            "h": 125
+        },
+        "action-disabled": {
+            "atlas": "control-art",
+            "x": 1074,
+            "y": 136,
+            "w": 400,
+            "h": 124
+        },
+        "action-back": {
+            "atlas": "control-art",
+            "x": 660,
+            "y": 272,
+            "w": 122,
+            "h": 115
+        },
+        "action-next": {
+            "atlas": "control-art",
+            "x": 790,
+            "y": 272,
+            "w": 122,
+            "h": 115
+        },
+        "action-gear": {
+            "atlas": "control-art",
+            "x": 920,
+            "y": 272,
+            "w": 122,
+            "h": 115
+        }
+    },
+    "sizes": {
+        "control-art": [1536, 400]
+    }
+}

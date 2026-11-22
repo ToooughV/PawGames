@@ -1,0 +1,21 @@
+{
+    "sizes": {
+        "reveal-rays": [512, 256]
+    },
+    "frames": {
+        "fx-beam-rare": {
+            "atlas": "reveal-rays",
+            "x": 9,
+            "y": 7,
+            "w": 237,
+            "h": 242
+        },
+        "fx-beam-ultra": {
+            "atlas": "reveal-rays",
+            "x": 263,
+            "y": 25,
+            "w": 242,
+            "h": 206
+        }
+    }
+}

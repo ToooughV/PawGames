@@ -1,0 +1,45 @@
+Gacha Figures UI fonts
+
+Pixelify Sans by Stefie Justprince
+Copyright 2021 The Pixelify Sans Project Authors
+https://github.com/eifetx/Pixelify-Sans
+License: SIL Open Font License 1.1; see pixelify-sans/OFL.txt.
+Source: https://github.com/google/fonts/tree/main/ofl/pixelifysans
+Upstream commit recorded in Google Fonts METADATA.pb:
+39df74aba80df8157546034b878e8be1eb565ced
+PixelifySans-Bold.ttf is a static weight-700 instance of the upstream
+PixelifySans[wght].ttf, generated with fontTools 4.68.0 varLib.instancer.
+No glyph outlines were manually edited. Used for non-Chinese UI text.
+
+Silkscreen by Jason Kottke
+Copyright 2001 The Silkscreen Project Authors
+https://github.com/googlefonts/silkscreen
+License: SIL Open Font License 1.1; see silkscreen/OFL.txt.
+Source: https://github.com/google/fonts/tree/main/ofl/silkscreen
+Upstream commit recorded in Google Fonts METADATA.pb:
+206ccf3f5234c281461e63ecc59cbc6b0563472b
+Silkscreen-Regular.ttf is bundled unmodified. Used only for U+0030-0039
+through a FontFace unicodeRange; the face is mapped to the UI's weight 700
+descriptor to avoid browser-synthesized bold strokes.
+
+Fusion Pixel Font, 12px proportional Simplified Chinese, by TakWolf
+Copyright (c) 2022, TakWolf (https://takwolf.com).
+https://github.com/TakWolf/fusion-pixel-font
+Release: 2026.11.10 (a38a5de)
+Source archive: fusion-pixel-font-12px-proportional-ttf.woff2-v2026.11.10.zip
+FusionPixel-12px-SC.woff2 is the unmodified zh_hans file from that archive.
+License: SIL OFL 1.1; see fusion-pixel/OFL.txt and fusion-pixel/LICENSES
+for the bundled upstream Ark Pixel, Cubic 11 and Galmuri notices.
+Used for Chinese and symbols absent from Pixelify Sans.
+
+Gacha Rare Pixel is a renamed single-glyph subset of GNU Unifont 18.0.01.
+https://unifoundry.com/unifont/index.html
+Source: https://ftp.gnu.org/gnu/unifont/unifont-18.0.01/unifont-18.0.01.otf
+Generated 2026-11-20 using fontTools 4.68.0; subset to U+45DB, renamed,
+and encoded as WOFF2. The glyph outline is unchanged. Used for the
+rare Chinese character in the leaf-insect figure name.
+Distributed under SIL OFL 1.1, one of the upstream font's dual licenses.
+See rare-pixel/OFL.txt and rare-pixel/copyright.txt.
+
+All fonts are bundled locally. The same pixel stack is used for all
+eight languages, including Chinese, numbers, punctuation and symbols.

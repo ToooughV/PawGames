@@ -9,4 +9,6 @@ Products made by PawGames
 
 - [Energy Cannon](https://toooughv.github.io/PawGames/Playable/EnergyCannon/)
 
+- [Gacha Figures](https://toooughv.github.io/PawGames/Playable/GachaFigures/)
+
 Publish builds under `Playable/<game>/`. The former `PokiDemo` game link redirects to the new address, preserving query parameters and fragments.
