@@ -1,10 +1,10 @@
 # Energy Cannon demo · V1.0.0 · 2026-11-22
 
 - Canonical URL: https://toooughv.github.io/PawGames/Playable/EnergyCannon/
-- Source: playcanvas_frame / `02_energy_cannon` / `8f8643d`.
+- Source: playcanvas_frame / `02_energy_cannon` / `d7eeba8`.
 - Build: `npm run build`; no platform SDK. 618 runtime files, about 14 MB in `dist`.
-- Entry: `assets/index-DoXlJPA4.js`, SHA-256 `339d93647c7e52b179a8517aad6425f7f06aa462b4429304fdebf859b9325d85`; `index.html` SHA-256 `929b37215939d76ceeef1653c0552f51ffc20d42d0ff2fdd58f0759bdeb15962`.
-- Game chunk: `assets/boot-C3RC4irN.js`, SHA-256 `73ae8748479a20a1bba999cdf94aeb257aff8dee4392b81df450084ba9c4567a`.
+- Entry: `assets/index-DISnE12C.js`, SHA-256 `aa7a15abb249c46312672ff724ee9a33b7221ff1b4edf777f36f72e980074f6b`; `index.html` SHA-256 `eea1301733fe77ddcfa6a6e1f81dbe9255d7c91aa38f7140353cc1cb26eb2a7f`.
+- Game chunk: `assets/boot-DK50l5c3.js`, SHA-256 `0cb765ae952baabc2444200418d48846da177c5ba7bdbda365e7a350a0366a76`.
 - Stylesheet: `assets/boot-DjP3D4zy.css`, SHA-256 `f0d18f91a02f959826c81fc021ef016c58572d45205600ca8a32a7a2bbae515b`.
 - Fonts: `assets/ui/energy-v1/pixel/ArkPixel12-latin.woff2` (SHA-256 `af13311b62fb8c4cb79240f4b8a15df4e727979b249e4208a03c0b8c7b4f7e6f`) and `ArkPixel12-cjk.woff2` (SHA-256 `1c19a6df947e6adb85b50cb2d212b34cf52d3b80dfbdad332e3331d77864b29b`).
 - Previous hashed bundles remain in the folder for cached clients; the legacy full font file is no longer referenced by the new CSS or HTML.
@@ -17,7 +17,7 @@
 - All four BGM tracks load in parallel immediately after the opening gate; only combat and interface effects wait for idle time. Measured first gesture → battle BGM in about 35 ms, and reward → shop scene → shop BGM in about 17 ms.
 - Settings, manual, codex and relic panels open immediately without an art curtain; real screen changes cap the outgoing-art curtain at 400 ms instead of 10 s. Settings and module-inspection chrome now loads before the atlas and shop art.
 - If one opening image still stalls after a retry, the game now opens and requests it again from the live DOM instead of showing the startup error panel on a slow CDN.
-- The restart confirmation re-fits its button labels every time it opens. The English keep label is now “Keep voyage”, so both keys keep the 36 px size and stay inside their enamel faces in all eight languages.
+- The restart confirmation re-fits its button labels every time it opens, targeting 62% of the key width and using one size for both buttons. The English keep label is now “Keep voyage”; the narrowest tested gutter is 52 px and no label touches the enamel face in any supported language.
 - Includes the owned-relics cabinet artwork and layout, repeat-voyage opening fleet rotation, and the earlier first-flight action buttons and module inspection updates.
 - Startup performance marks: `energy:boot-mounted`, `energy:art-ready`, `energy:first-screen`.
 
