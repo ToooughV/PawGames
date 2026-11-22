@@ -29,6 +29,6 @@
 
 ## GitHub publication
 
-- Site commit: `67da227` on PawGames/`main`.
-- Live `index.html`, `assets/index-CcMm64vA.js`, `assets/boot-BJnRAY8q.js` and `assets/boot-DjP3D4zy.css` all return HTTP 200 and match the local SHA-256 hashes above. The previous `index-C01zwaQN.js` and earlier bundles stay in the folder for cached clients.
-- Live browser check: entry `index-CcMm64vA.js`, no startup error panel, zero broken images. Settings opens in about 55 ms, all four BGM tracks are requested immediately after the art gate, and battle music starts on the first gesture. This test network reached GitHub Pages slowly (HTML TTFB around 8 s), so the cold first screen took about 12 s here; the game's own preload completed without failing.
+- Site commit: `8abb751` on PawGames/`main`.
+- Live `index.html`, `assets/index-DoXlJPA4.js` and `assets/boot-C3RC4irN.js` return HTTP 200 and match the local SHA-256 hashes above. Earlier bundles stay in the folder for cached clients.
+- Restart-dialog check in English, German, French, Turkish and Chinese: every label fits inside its key with 37–77 px side gaps; the English buttons share the 36 px size (`Keep voyage` 70 px gap, `Start new voyage` 41 px gap).
