@@ -1,10 +1,10 @@
 # Energy Cannon demo · V1.0.0 · 2026-11-22
 
 - Canonical URL: https://toooughv.github.io/PawGames/Playable/EnergyCannon/
-- Source: playcanvas_frame / `02_energy_cannon` / `673fdab`.
+- Source: playcanvas_frame / `02_energy_cannon` / `1dd485b`.
 - Build: `npm run build`; no platform SDK. 618 runtime files, about 14 MB in `dist`.
-- Entry: `assets/index-C01zwaQN.js`, SHA-256 `b97b914fa1101cee23e03469ec69e63ce76bebce992764143f353f1737381818`; `index.html` SHA-256 `4bbd622444eb562c4b1cde6416d86007ff9a546a71adf9f0ac0dd52f67e1d6aa`.
-- Game chunk: `assets/boot-k-QNXx7n.js`, SHA-256 `96fb740a5adc0076ac5e3f6110a94eb797150a51b13b848fcff37abe74604a0f`.
+- Entry: `assets/index-CcMm64vA.js`, SHA-256 `ff6ba3ec22a52f18a4335b12922ba7a074e095346aafe3c2c83e9980b42946cd`; `index.html` SHA-256 `b02f19d069ae7c92505fa7c1e1eb568cc5fb9feb3110876afdea33ee03520e32`.
+- Game chunk: `assets/boot-BJnRAY8q.js`, SHA-256 `08cb2339c2f775285746b2106a855a91c97e4b64181252356c1879242edf6d11`.
 - Stylesheet: `assets/boot-DjP3D4zy.css`, SHA-256 `f0d18f91a02f959826c81fc021ef016c58572d45205600ca8a32a7a2bbae515b`.
 - Fonts: `assets/ui/energy-v1/pixel/ArkPixel12-latin.woff2` (SHA-256 `af13311b62fb8c4cb79240f4b8a15df4e727979b249e4208a03c0b8c7b4f7e6f`) and `ArkPixel12-cjk.woff2` (SHA-256 `1c19a6df947e6adb85b50cb2d212b34cf52d3b80dfbdad332e3331d77864b29b`).
 - Previous hashed bundles remain in the folder for cached clients; the legacy full font file is no longer referenced by the new CSS or HTML.
@@ -16,6 +16,7 @@
 - Ark Pixel is split into a 21 KB Latin sheet and a 27 KB Han sheet with `unicode-range`; Latin sessions no longer download the full 566 KB CJK font. The Latin sheet is preloaded from `index.html`, and Chinese sessions preload the Han sheet after reading the saved locale.
 - All four BGM tracks load in parallel immediately after the opening gate; only combat and interface effects wait for idle time. Measured first gesture → battle BGM in about 35 ms, and reward → shop scene → shop BGM in about 17 ms.
 - Settings, manual, codex and relic panels open immediately without an art curtain; real screen changes cap the outgoing-art curtain at 400 ms instead of 10 s. Settings and module-inspection chrome now loads before the atlas and shop art.
+- If one opening image still stalls after a retry, the game now opens and requests it again from the live DOM instead of showing the startup error panel on a slow CDN.
 - Includes the owned-relics cabinet artwork and layout, repeat-voyage opening fleet rotation, and the earlier first-flight action buttons and module inspection updates.
 - Startup performance marks: `energy:boot-mounted`, `energy:art-ready`, `energy:first-screen`.
 
